@@ -15,6 +15,9 @@
 import unittest
 import numpy as np
 import scipy
+from unittest.mock import patch
+
+from pyscf import ao2mo
 
 from tangelo import SecondQuantizedMolecule
 from tangelo.molecule_library import mol_H4_doublecation_minao, mol_H4_doublecation_321g, mol_H10_321g, mol_H10_minao
@@ -190,6 +193,87 @@ class DMETProblemDecompositionTest(unittest.TestCase):
         solver.build()
         energy = solver.simulate()
         self.assertAlmostEqual(energy, -4.489290, places=4)
+
+    def test_solver_sqd_defaults(self):
+        """Test that SQD fragments wire into DMET with default solver options."""
+
+        class MockSQDSolver:
+            def __init__(self, options):
+                self.molecule = options["molecule"]
+
+            def build(self):
+                pass
+
+            def simulate(self):
+                pass
+
+            def get_rdm(self, resample=False):
+                mf_fragment = self.molecule.mean_field
+                onerdm = mf_fragment.mo_coeff.T @ mf_fragment.make_rdm1() @ mf_fragment.mo_coeff
+                twordm = mf_fragment.make_rdm2()
+                twordm = ao2mo.kernel(twordm, mf_fragment.mo_coeff)
+                twordm = ao2mo.restore(1, twordm, len(mf_fragment.mo_coeff))
+                return onerdm, twordm
+
+        opt_dmet = {"molecule": mol_H4_doublecation_minao,
+                    "fragment_atoms": [1, 1, 1, 1],
+                    "fragment_solvers": "sqd",
+                    "electron_localization": Localization.meta_lowdin,
+                    "verbose": False
+                    }
+
+        with patch("tangelo.problem_decomposition.dmet.dmet_problem_decomposition.SQDSolver", MockSQDSolver):
+            solver = DMETProblemDecomposition(opt_dmet)
+            self.assertEqual(solver.solvers_options, [{}] * 4)
+            solver.build()
+            energy = solver.simulate()
+
+        self.assertAlmostEqual(energy, mol_H4_doublecation_minao.mf_energy, places=4)
+        self.assertAlmostEqual(solver.electron_residual, 0.0, places=6)
+
+    def test_default_optimizer_uses_newton_without_sqd(self):
+        """Test that deterministic DMET paths keep using Newton root-finding."""
+
+        opt_dmet = {"molecule": mol_H4_doublecation_minao,
+                    "fragment_atoms": [1, 1, 1, 1],
+                    "fragment_solvers": "ccsd",
+                    "verbose": False
+                    }
+
+        solver = DMETProblemDecomposition(opt_dmet)
+
+        with patch("scipy.optimize.newton", return_value=0.125) as mock_newton:
+            mu = solver._default_optimizer(lambda x: x, 0.0)
+
+        mock_newton.assert_called_once()
+        self.assertEqual(mu, 0.125)
+
+    def test_default_optimizer_uses_noisy_sqd_root_solver(self):
+        """Test that SQD-backed DMET uses the noise-robust chemical-potential solver."""
+
+        opt_dmet = {"molecule": mol_H4_doublecation_minao,
+                    "fragment_atoms": [1, 1, 1, 1],
+                    "fragment_solvers": "sqd",
+                    "noisy_optimizer_options": {
+                        "residual_evaluations": 1,
+                        "residual_tol": 1e-6,
+                        "bracket_radius": 0.25,
+                        "bracket_growth": 2.0,
+                        "max_bracket_steps": 6,
+                        "mu_min": -2.0,
+                        "mu_max": 2.0,
+                        "brent_tol": 1e-6,
+                        "damped_step": 0.25,
+                        "max_mu_step": 0.5,
+                        "max_damped_steps": 8,
+                    },
+                    "verbose": False
+                    }
+
+        solver = DMETProblemDecomposition(opt_dmet)
+        mu = solver._default_optimizer(lambda x: x - 0.3, 0.0)
+
+        self.assertAlmostEqual(mu, 0.3, places=5)
 
     def test_fragment_ids(self):
         """Tests if a nested list of atom ids is provided."""

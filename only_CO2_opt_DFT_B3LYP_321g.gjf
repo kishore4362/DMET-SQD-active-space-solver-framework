@@ -1,0 +1,14 @@
+%chk=only_CO2_opt_DFT_B3LYP_321g.chk
+# opt freq b3lyp/3-21g geom=connectivity
+
+Title Card Required
+
+0 1
+ C                 -0.23130303    0.14312432   -0.04876380
+ O                 -1.48970303    0.14312432   -0.04876380
+ O                  1.02709697    0.14312432   -0.04876380
+
+ 1 2 2.0 3 2.0
+ 2
+ 3
+

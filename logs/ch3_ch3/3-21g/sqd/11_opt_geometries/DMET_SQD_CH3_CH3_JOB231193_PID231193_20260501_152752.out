@@ -1,0 +1,231 @@
+Resuming from checkpoint. 0 points already completed.
+
+=== Relaxed scan: C-C distance = 1.50 A ===
+geometric-optimize called with the following command line:
+run_dmet_sqd_hardware.py
+
+                                        [91m())))))))))))))))/[0m                     
+                                    [91m())))))))))))))))))))))))),[0m                
+                                [91m*)))))))))))))))))))))))))))))))))[0m             
+                        [94m#,[0m    [91m()))))))))/[0m                [91m.)))))))))),[0m          
+                      [94m#%%%%,[0m  [91m())))))[0m                        [91m.))))))))*[0m        
+                      [94m*%%%%%%,[0m  [91m))[0m              [93m..[0m              [91m,))))))).[0m      
+                        [94m*%%%%%%,[0m         [93m***************/.[0m        [91m.)))))))[0m     
+                [94m#%%/[0m      [94m(%%%%%%,[0m    [93m/*********************.[0m       [91m)))))))[0m    
+              [94m.%%%%%%#[0m      [94m*%%%%%%,[0m  [93m*******/,[0m     [93m**********,[0m      [91m.))))))[0m   
+                [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [93m**[0m              [93m********[0m      [91m.))))))[0m  
+          [94m##[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m                  [93m,******[0m      [91m/)))))[0m  
+        [94m%%%%%%[0m      [94m.%%%%%%#[0m      [94m*%%%%%%,[0m    [92m,/////.[0m       [93m******[0m      [91m))))))[0m 
+      [94m#%[0m      [94m%%[0m      [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [92m////////,[0m      [93m*****/[0m     [91m,)))))[0m 
+    [94m#%%[0m  [94m%%%[0m  [94m%%%#[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m  [92m///////.[0m     [93m/*****[0m      [91m))))).[0m
+  [94m#%%%%.[0m      [94m%%%%%#[0m      [94m/%%%%%%*[0m      [94m#%%%%%%[0m   [92m/////)[0m     [93m******[0m      [91m))))),[0m
+    [94m#%%%%##%[0m  [94m%%%#[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m  [92m///////.[0m     [93m/*****[0m      [91m))))).[0m
+      [94m##[0m     [94m%%%[0m      [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [92m////////.[0m      [93m*****/[0m     [91m,)))))[0m 
+        [94m#%%%%#[0m      [94m/%%%%%%/[0m      [94m(%%%%%%[0m      [92m/)/)//[0m       [93m******[0m      [91m))))))[0m 
+          [94m##[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m                  [93m*******[0m      [91m))))))[0m  
+                [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [93m**.[0m             [93m/*******[0m      [91m.))))))[0m  
+              [94m*%%%%%%/[0m      [94m(%%%%%%[0m   [93m********/*..,*/*********[0m       [91m*))))))[0m   
+                [94m#%%/[0m      [94m(%%%%%%,[0m    [93m*********************/[0m        [91m)))))))[0m    
+                        [94m*%%%%%%,[0m         [93m,**************/[0m         [91m,))))))/[0m     
+                      [94m(%%%%%%[0m   [91m()[0m                              [91m))))))))[0m       
+                      [94m#%%%%,[0m  [91m())))))[0m                        [91m,)))))))),[0m        
+                        [94m#,[0m    [91m())))))))))[0m                [91m,)))))))))).[0m          
+                                 [91m()))))))))))))))))))))))))))))))/[0m             
+                                    [91m())))))))))))))))))))))))).[0m                
+                                         [91m())))))))))))))),[0m                     
+
+-=# [1;94m geomeTRIC started. Version: 1.1 [0m #=-
+Current date and time: 2026-05-01 15:27:52
+#========================================================#
+#| [92m    Arguments passed to driver run_optimizer():     [0m |#
+#========================================================#
+constraints               /tmp/tmp29i6s8oi/constraints.txt 
+customengine              <pyscf.geomopt.geometric_solver.PySCFEngine object at 0x7f511df066c0> 
+input                     /tmp/tmp5e3jqm0d/9c575ed1-c816-4eef-8fe5-0b94cfd4d79b 
+logIni                    /home/bhabani/miniconda3/lib/python3.12/site-packages/pyscf/geomopt/log.ini 
+maxiter                   100 
+----------------------------------------------------------
+Custom engine selected.
+$set
+distance 1 5 1.50000000
+Bonds will be generated from interatomic distances less than 1.20 times sum of covalent radii
+24 internal coordinates being used (instead of 24 Cartesians)
+Internal coordinate system (atoms numbered from 1):
+Distance 1-5
+Distance 1-2
+Distance 1-3
+Distance 1-4
+Distance 5-6
+Distance 5-7
+Distance 5-8
+Angle 2-1-3
+Angle 2-1-4
+Angle 2-1-5
+Angle 3-1-4
+Angle 3-1-5
+Angle 4-1-5
+Angle 1-5-6
+Angle 1-5-7
+Angle 1-5-8
+Angle 6-5-7
+Angle 6-5-8
+Angle 7-5-8
+Dihedral 2-1-5-6
+Dihedral 2-1-5-7
+Dihedral 2-1-5-8
+Dihedral 3-1-5-6
+Dihedral 3-1-5-7
+Dihedral 3-1-5-8
+Dihedral 4-1-5-6
+Dihedral 4-1-5-7
+Dihedral 4-1-5-8
+Translation-X 1-8
+Translation-Y 1-8
+Translation-Z 1-8
+Rotation-A 1-8
+Rotation-B 1-8
+Rotation-C 1-8
+<class 'geometric.internal.Distance'> : 7
+<class 'geometric.internal.Angle'> : 12
+<class 'geometric.internal.Dihedral'> : 9
+<class 'geometric.internal.TranslationX'> : 1
+<class 'geometric.internal.TranslationY'> : 1
+<class 'geometric.internal.TranslationZ'> : 1
+<class 'geometric.internal.RotationA'> : 1
+<class 'geometric.internal.RotationB'> : 1
+<class 'geometric.internal.RotationC'> : 1
+Constraint                         Current      Target       Diff.
+Distance 1-5                       1.50000     1.50000    -0.00000
+> ===== Optimization Info: ====
+> Job type: Energy minimization
+> Maximum number of optimization cycles: 100
+> Initial / maximum trust radius (Angstrom): 0.100 / 0.300
+> Convergence Criteria:
+> Will converge when all 5 criteria are reached:
+>  |Delta-E| < 1.00e-06
+>  RMS-Ortho-Grad < 3.00e-04
+>  Max-Ortho-Grad < 4.50e-04
+>  RMS-Disp  < 1.20e-03
+>  Max-Disp  < 1.80e-03
+> 
+> Constraints are requested. The following criterion is added:
+>  Max Constraint Violation (in Angstroms/degrees) < 1.00e-02 
+> === End Optimization Info ===
+WARN: Mole.unit (Angstrom) is changed to Bohr
+Step    0 : Gradient = 7.008e-03/7.884e-03 (rms/max) Energy = -78.7924929710
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41388e-01 3.41561e-01 3.41561e-01
+Step    1 : Displace = [0m1.424e-02[0m/[0m1.650e-02[0m (rms/max) Trust = 1.000e-01 (=) Grad_T = [0m8.190e-04[0m/[0m9.391e-04[0m (rms/max) E (change) = -78.7930433271 ([0m-5.504e-04[0m) Quality = [0m0.878[0m
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41504e-01 3.41561e-01 3.81685e-01
+Step    2 : Displace = [0m2.245e-03[0m/[0m2.593e-03[0m (rms/max) Trust = 1.414e-01 ([92m+[0m) Grad_T = [92m1.988e-05[0m/[92m2.155e-05[0m (rms/max) E (change) = -78.7930539721 ([0m-1.065e-05[0m) Quality = [0m0.983[0m
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41504e-01 3.41561e-01 4.12773e-01
+Step    3 : Displace = [92m2.826e-05[0m/[92m3.283e-05[0m (rms/max) Trust = 2.000e-01 ([92m+[0m) Grad_T = [92m4.803e-07[0m/[92m7.572e-07[0m (rms/max) E (change) = -78.7930539759 ([92m-3.752e-09[0m) Quality = [0m0.991[0m
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41504e-01 3.41561e-01 4.12773e-01
+Converged! =D
+
+    #==========================================================================#
+    #| If this code has benefited your research, please support us by citing: |#
+    #|                                                                        |#
+    #| Wang, L.-P.; Song, C.C. (2016) "Geometry optimization made simple with |#
+    #| translation and rotation coordinates", J. Chem, Phys. 144, 214108.     |#
+    #| http://dx.doi.org/10.1063/1.4952956                                    |#
+    #==========================================================================#
+    Time elapsed since start of run_optimizer: 1.020 seconds
+WARN: ECP not specified. The basis set CRENBL include an ECP. Recommended ECP: CRENBL.
+/home/bhabani/Kishore/Tangelo_2.0_hardware/tangelo/problem_decomposition/dmet/dmet_problem_decomposition.py:168: RuntimeWarning: The mean field will be recomputed even if one has been provided by the user.
+  warnings.warn("The mean field will be recomputed even if one has been provided by the user.", RuntimeWarning)
+	[Optimizer] Evaluating mu=0.000000 with 1 hardware jobs...
+ 	Iteration =  1
+ 	Chemical Potential (mu) =      0.0000000000
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[3.64169504e-16 1.33735810e-17 2.57486077e-17 4.32825212e-17
+ 6.95047542e-17 5.80367720e-16 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[2.68012585e-16 2.29284279e-16 1.64400395e-17 6.45752340e-20
+ 5.71236455e-17 7.18188808e-17 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -60.87750136454812
+		Number of Electrons in Fragment = 9.005933939845095
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directoryAn NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.LUCJ CCSD init diag: norb=4, n_reps=2, t1_shape=(2, 2), t2_shape=(2, 2, 2, 2), t1_norm=1.463121e-03, t2_norm=3.107773e-02
+[AccountManager] SQD call 1: using account 1 (1/10)
+Pass: Decompose - 1.33371 (ms)Pass: MergeOrbitalRotations - 0.50759 (ms)Pass: UnitarySynthesis - 0.00834 (ms)Pass: HighLevelSynthesis - 2.12812 (ms)Pass: BasisTranslator - 0.10800 (ms)Pass: ElidePermutations - 0.00668 (ms)Pass: RemoveDiagonalGatesBeforeMeasure - 0.00882 (ms)Pass: RemoveIdentityEquivalent - 0.01454 (ms)Pass: InverseCancellation - 0.01693 (ms)Pass: ContractIdleWiresInControlFlow - 0.00215 (ms)Pass: CommutativeCancellation - 0.07010 (ms)Pass: ConsolidateBlocks - 0.32353 (ms)Pass: Split2QUnitaries - 0.00334 (ms)Pass: SetLayout - 0.02980 (ms)Pass: FullAncillaAllocation - 0.21791 (ms)Pass: EnlargeWithAncilla - 0.11826 (ms)Pass: ApplyLayout - 0.43297 (ms)Pass: CheckMap - 0.11635 (ms)Pass: BarrierBeforeFinalMeasurements - 1.36352 (ms)Pass: SabreSwap - 2.90275 (ms)Pass: FilterOpNodes - 0.24319 (ms)Pass: UnitarySynthesis - 0.00882 (ms)Pass: HighLevelSynthesis - 0.03815 (ms)Pass: BasisTranslator - 2.82478 (ms)Pass: Depth - 0.16332 (ms)Pass: Size - 0.00453 (ms)Pass: MinimumPoint - 0.01240 (ms)Pass: ConsolidateBlocks - 1.20330 (ms)Pass: UnitarySynthesis - 3.08800 (ms)Pass: RemoveIdentityEquivalent - 0.04101 (ms)Pass: Optimize1qGatesDecomposition - 0.31519 (ms)Pass: CommutativeCancellation - 0.31304 (ms)Pass: ContractIdleWiresInControlFlow - 0.00238 (ms)Pass: GatesInBasis - 0.08583 (ms)Pass: Depth - 0.07033 (ms)Pass: Size - 0.00262 (ms)Pass: MinimumPoint - 0.07915 (ms)Pass: ConsolidateBlocks - 0.55385 (ms)Pass: UnitarySynthesis - 0.57483 (ms)Pass: RemoveIdentityEquivalent - 0.02980 (ms)Pass: Optimize1qGatesDecomposition - 0.22149 (ms)Pass: CommutativeCancellation - 0.27037 (ms)Pass: ContractIdleWiresInControlFlow - 0.00215 (ms)Pass: GatesInBasis - 0.07820 (ms)Pass: Depth - 0.06747 (ms)Pass: Size - 0.00215 (ms)Pass: MinimumPoint - 0.09656 (ms)Pass: ConsolidateBlocks - 0.54479 (ms)Pass: UnitarySynthesis - 0.50616 (ms)Pass: RemoveIdentityEquivalent - 0.02885 (ms)Pass: Optimize1qGatesDecomposition - 0.22101 (ms)Pass: CommutativeCancellation - 0.28014 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.08178 (ms)Pass: Depth - 0.06533 (ms)Pass: Size - 0.00238 (ms)Pass: MinimumPoint - 0.00453 (ms)Pass: ContainsInstruction - 0.00644 (ms)Pass: InstructionDurationCheck - 0.00358 (ms)SQD counts diag: n_bits=8, first_bitstring=[0, 0, 1, 1, 0, 1, 1, 1], hamming_left=2, hamming_right=3
+SQD postselect diag: total_samples=256, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD postselect diag: total_samples=36, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=0.9999999999999998, trace(rdm1)=3.9999999999999982
+		SQD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=3.9999999999999982
+		Fragment Energy = -60.72016572906362
+		Number of Electrons in Fragment = 9.033987922407674
+	Electron Residual = 0.03992186225276839
+	[Optimizer] Evaluating mu=-0.050000 with 1 hardware jobs...
+ 	Iteration =  2
+ 	Chemical Potential (mu) =     -0.0500000000
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[3.64169504e-16 1.33735810e-17 2.57486077e-17 4.32825212e-17
+ 6.95047542e-17 5.80367720e-16 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[2.68012585e-16 2.29284279e-16 1.64400395e-17 6.45752340e-20
+ 5.71236455e-17 7.18188808e-17 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -60.73809548112763
+		Number of Electrons in Fragment = 8.956064287095154
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+LUCJ CCSD init diag: norb=4, n_reps=2, t1_shape=(2, 2), t2_shape=(2, 2, 2, 2), t1_norm=3.080208e-09, t2_norm=2.255324e-02
+[AccountManager] SQD call 2: using account 1 (2/10)
+Pass: Decompose - 0.83661 (ms)Pass: MergeOrbitalRotations - 0.53239 (ms)Pass: UnitarySynthesis - 0.00715 (ms)Pass: HighLevelSynthesis - 2.25163 (ms)Pass: BasisTranslator - 0.12088 (ms)Pass: ElidePermutations - 0.00572 (ms)Pass: RemoveDiagonalGatesBeforeMeasure - 0.00763 (ms)Pass: RemoveIdentityEquivalent - 0.01693 (ms)Pass: InverseCancellation - 0.01764 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: CommutativeCancellation - 0.05746 (ms)Pass: ConsolidateBlocks - 0.29850 (ms)Pass: Split2QUnitaries - 0.00334 (ms)Pass: SetLayout - 0.02003 (ms)Pass: FullAncillaAllocation - 0.21720 (ms)Pass: EnlargeWithAncilla - 0.09227 (ms)Pass: ApplyLayout - 0.43774 (ms)Pass: CheckMap - 0.10347 (ms)Pass: BarrierBeforeFinalMeasurements - 2.60115 (ms)Pass: SabreSwap - 4.54330 (ms)Pass: FilterOpNodes - 0.37336 (ms)Pass: UnitarySynthesis - 0.01693 (ms)Pass: HighLevelSynthesis - 0.05817 (ms)Pass: BasisTranslator - 6.08492 (ms)Pass: Depth - 0.36526 (ms)Pass: Size - 0.00882 (ms)Pass: MinimumPoint - 0.03099 (ms)Pass: ConsolidateBlocks - 1.39451 (ms)Pass: UnitarySynthesis - 2.73132 (ms)Pass: RemoveIdentityEquivalent - 0.04315 (ms)Pass: Optimize1qGatesDecomposition - 0.35977 (ms)Pass: CommutativeCancellation - 0.39172 (ms)Pass: ContractIdleWiresInControlFlow - 0.00310 (ms)Pass: GatesInBasis - 0.09441 (ms)Pass: Depth - 0.09513 (ms)Pass: Size - 0.00310 (ms)Pass: MinimumPoint - 0.09394 (ms)Pass: ConsolidateBlocks - 0.62871 (ms)Pass: UnitarySynthesis - 0.65565 (ms)Pass: RemoveIdentityEquivalent - 0.03505 (ms)Pass: Optimize1qGatesDecomposition - 0.26894 (ms)Pass: CommutativeCancellation - 0.35167 (ms)Pass: ContractIdleWiresInControlFlow - 0.00286 (ms)Pass: GatesInBasis - 0.08631 (ms)Pass: Depth - 0.08941 (ms)Pass: Size - 0.00334 (ms)Pass: MinimumPoint - 0.12612 (ms)Pass: ConsolidateBlocks - 0.60248 (ms)Pass: UnitarySynthesis - 0.61178 (ms)Pass: RemoveIdentityEquivalent - 0.03147 (ms)Pass: Optimize1qGatesDecomposition - 0.26107 (ms)Pass: CommutativeCancellation - 0.32377 (ms)Pass: ContractIdleWiresInControlFlow - 0.00262 (ms)Pass: GatesInBasis - 0.08917 (ms)Pass: Depth - 0.06127 (ms)Pass: Size - 0.00238 (ms)Pass: MinimumPoint - 0.00572 (ms)Pass: ContainsInstruction - 0.00787 (ms)Pass: InstructionDurationCheck - 0.00334 (ms)

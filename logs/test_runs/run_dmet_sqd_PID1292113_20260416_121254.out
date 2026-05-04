@@ -1,0 +1,190 @@
+Logging enabled. Output redirected to: logs/test_runs/run_dmet_sqd_PID1292113_20260416_121254.out
+Initial C-C distance: 1.544 Å
+
+=== Running simple DMET + SQD for C-C distance = 1.50 Å ===
+geometric-optimize called with the following command line:
+run_dmet_sqd.py
+
+                                        [91m())))))))))))))))/[0m                     
+                                    [91m())))))))))))))))))))))))),[0m                
+                                [91m*)))))))))))))))))))))))))))))))))[0m             
+                        [94m#,[0m    [91m()))))))))/[0m                [91m.)))))))))),[0m          
+                      [94m#%%%%,[0m  [91m())))))[0m                        [91m.))))))))*[0m        
+                      [94m*%%%%%%,[0m  [91m))[0m              [93m..[0m              [91m,))))))).[0m      
+                        [94m*%%%%%%,[0m         [93m***************/.[0m        [91m.)))))))[0m     
+                [94m#%%/[0m      [94m(%%%%%%,[0m    [93m/*********************.[0m       [91m)))))))[0m    
+              [94m.%%%%%%#[0m      [94m*%%%%%%,[0m  [93m*******/,[0m     [93m**********,[0m      [91m.))))))[0m   
+                [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [93m**[0m              [93m********[0m      [91m.))))))[0m  
+          [94m##[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m                  [93m,******[0m      [91m/)))))[0m  
+        [94m%%%%%%[0m      [94m.%%%%%%#[0m      [94m*%%%%%%,[0m    [92m,/////.[0m       [93m******[0m      [91m))))))[0m 
+      [94m#%[0m      [94m%%[0m      [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [92m////////,[0m      [93m*****/[0m     [91m,)))))[0m 
+    [94m#%%[0m  [94m%%%[0m  [94m%%%#[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m  [92m///////.[0m     [93m/*****[0m      [91m))))).[0m
+  [94m#%%%%.[0m      [94m%%%%%#[0m      [94m/%%%%%%*[0m      [94m#%%%%%%[0m   [92m/////)[0m     [93m******[0m      [91m))))),[0m
+    [94m#%%%%##%[0m  [94m%%%#[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m  [92m///////.[0m     [93m/*****[0m      [91m))))).[0m
+      [94m##[0m     [94m%%%[0m      [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [92m////////.[0m      [93m*****/[0m     [91m,)))))[0m 
+        [94m#%%%%#[0m      [94m/%%%%%%/[0m      [94m(%%%%%%[0m      [92m/)/)//[0m       [93m******[0m      [91m))))))[0m 
+          [94m##[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m                  [93m*******[0m      [91m))))))[0m  
+                [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [93m**.[0m             [93m/*******[0m      [91m.))))))[0m  
+              [94m*%%%%%%/[0m      [94m(%%%%%%[0m   [93m********/*..,*/*********[0m       [91m*))))))[0m   
+                [94m#%%/[0m      [94m(%%%%%%,[0m    [93m*********************/[0m        [91m)))))))[0m    
+                        [94m*%%%%%%,[0m         [93m,**************/[0m         [91m,))))))/[0m     
+                      [94m(%%%%%%[0m   [91m()[0m                              [91m))))))))[0m       
+                      [94m#%%%%,[0m  [91m())))))[0m                        [91m,)))))))),[0m        
+                        [94m#,[0m    [91m())))))))))[0m                [91m,)))))))))).[0m          
+                                 [91m()))))))))))))))))))))))))))))))/[0m             
+                                    [91m())))))))))))))))))))))))).[0m                
+                                         [91m())))))))))))))),[0m                     
+
+-=# [1;94m geomeTRIC started. Version: 1.1 [0m #=-
+Current date and time: 2026-04-16 12:12:57
+#========================================================#
+#| [92m    Arguments passed to driver run_optimizer():     [0m |#
+#========================================================#
+constraints               /tmp/tmpncbpyqhf/constraints.txt 
+customengine              <pyscf.geomopt.geometric_solver.PySCFEngine object at 0x7f082c595370> 
+input                     /tmp/tmpl5eskmzf/9d107e31-2975-458c-97c2-059e5725760d 
+logIni                    /home/bhabani/miniconda3/lib/python3.12/site-packages/pyscf/geomopt/log.ini 
+maxiter                   100 
+----------------------------------------------------------
+Custom engine selected.
+$freeze
+$end
+$set
+distance 1 5 1.50000000
+$end
+Bonds will be generated from interatomic distances less than 1.20 times sum of covalent radii
+24 internal coordinates being used (instead of 24 Cartesians)
+Internal coordinate system (atoms numbered from 1):
+Distance 1-5
+Distance 1-2
+Distance 1-3
+Distance 1-4
+Distance 5-6
+Distance 5-7
+Distance 5-8
+Angle 2-1-3
+Angle 2-1-4
+Angle 2-1-5
+Angle 3-1-4
+Angle 3-1-5
+Angle 4-1-5
+Angle 1-5-6
+Angle 1-5-7
+Angle 1-5-8
+Angle 6-5-7
+Angle 6-5-8
+Angle 7-5-8
+Dihedral 2-1-5-6
+Dihedral 2-1-5-7
+Dihedral 2-1-5-8
+Dihedral 3-1-5-6
+Dihedral 3-1-5-7
+Dihedral 3-1-5-8
+Dihedral 4-1-5-6
+Dihedral 4-1-5-7
+Dihedral 4-1-5-8
+Translation-X 1-8
+Translation-Y 1-8
+Translation-Z 1-8
+Rotation-A 1-8
+Rotation-B 1-8
+Rotation-C 1-8
+<class 'geometric.internal.Distance'> : 7
+<class 'geometric.internal.Angle'> : 12
+<class 'geometric.internal.Dihedral'> : 9
+<class 'geometric.internal.TranslationX'> : 1
+<class 'geometric.internal.TranslationY'> : 1
+<class 'geometric.internal.TranslationZ'> : 1
+<class 'geometric.internal.RotationA'> : 1
+<class 'geometric.internal.RotationB'> : 1
+<class 'geometric.internal.RotationC'> : 1
+Constraint                         Current      Target       Diff.
+Distance 1-5                       1.50000     1.50000    -0.00000
+> ===== Optimization Info: ====
+> Job type: Energy minimization
+> Maximum number of optimization cycles: 100
+> Initial / maximum trust radius (Angstrom): 0.100 / 0.300
+> Convergence Criteria:
+> Will converge when all 5 criteria are reached:
+>  |Delta-E| < 1.00e-06
+>  RMS-Ortho-Grad < 3.00e-04
+>  Max-Ortho-Grad < 4.50e-04
+>  RMS-Disp  < 1.20e-03
+>  Max-Disp  < 1.80e-03
+> 
+> Constraints are requested. The following criterion is added:
+>  Max Constraint Violation (in Angstroms/degrees) < 1.00e-02 
+> === End Optimization Info ===
+WARN: Mole.unit (Angstrom) is changed to Bohr
+Step    0 : Gradient = 7.008e-03/7.884e-03 (rms/max) Energy = -78.7924929710
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41388e-01 3.41561e-01 3.41561e-01
+Step    1 : Displace = [0m1.424e-02[0m/[0m1.650e-02[0m (rms/max) Trust = 1.000e-01 (=) Grad_T = [0m8.190e-04[0m/[0m9.391e-04[0m (rms/max) E (change) = -78.7930433271 ([0m-5.504e-04[0m) Quality = [0m0.878[0m
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41504e-01 3.41561e-01 3.81685e-01
+Step    2 : Displace = [0m2.245e-03[0m/[0m2.593e-03[0m (rms/max) Trust = 1.414e-01 ([92m+[0m) Grad_T = [92m1.988e-05[0m/[92m2.155e-05[0m (rms/max) E (change) = -78.7930539721 ([0m-1.065e-05[0m) Quality = [0m0.983[0m
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41504e-01 3.41561e-01 4.12773e-01
+Step    3 : Displace = [92m2.826e-05[0m/[92m3.283e-05[0m (rms/max) Trust = 2.000e-01 ([92m+[0m) Grad_T = [92m4.803e-07[0m/[92m7.572e-07[0m (rms/max) E (change) = -78.7930539759 ([92m-3.752e-09[0m) Quality = [0m0.991[0m
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41504e-01 3.41561e-01 4.12773e-01
+Converged! =D
+
+    #==========================================================================#
+    #| If this code has benefited your research, please support us by citing: |#
+    #|                                                                        |#
+    #| Wang, L.-P.; Song, C.C. (2016) "Geometry optimization made simple with |#
+    #| translation and rotation coordinates", J. Chem, Phys. 144, 214108.     |#
+    #| http://dx.doi.org/10.1063/1.4952956                                    |#
+    #==========================================================================#
+    Time elapsed since start of run_optimizer: 1.020 seconds
+WARN: ECP not specified. The basis set CRENBL include an ECP. Recommended ECP: CRENBL.
+/home/bhabani/Kishore/Tangelo_2.0_hardware/tangelo/problem_decomposition/dmet/dmet_problem_decomposition.py:168: RuntimeWarning: The mean field will be recomputed even if one has been provided by the user.
+  warnings.warn("The mean field will be recomputed even if one has been provided by the user.", RuntimeWarning)
+ 	Iteration =  1
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[5.14935146e-16 1.08699685e-16 2.23786358e-17 4.38575831e-18
+ 2.49618254e-17 1.33775212e-16 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[1.99863307e-16 1.41627228e-16 1.12918686e-17 7.88027607e-18
+ 2.78683530e-17 1.79566825e-16 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -60.877501364548166
+		Number of Electrons in Fragment = 9.00593393984511
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+Pass: Decompose - 0.72527 (ms)Pass: MergeOrbitalRotations - 0.03767 (ms)Pass: UnitarySynthesis - 0.00691 (ms)Pass: HighLevelSynthesis - 0.38218 (ms)Pass: BasisTranslator - 0.10610 (ms)Pass: ElidePermutations - 0.00882 (ms)Pass: RemoveDiagonalGatesBeforeMeasure - 0.00691 (ms)Pass: RemoveIdentityEquivalent - 0.00596 (ms)Pass: InverseCancellation - 0.01144 (ms)Pass: ContractIdleWiresInControlFlow - 0.00238 (ms)Pass: CommutativeCancellation - 0.02360 (ms)Pass: ConsolidateBlocks - 0.03624 (ms)Pass: Split2QUnitaries - 0.00429 (ms)Pass: SetLayout - 0.03076 (ms)Pass: FullAncillaAllocation - 0.20957 (ms)Pass: EnlargeWithAncilla - 0.10753 (ms)Pass: ApplyLayout - 0.44799 (ms)Pass: CheckMap - 0.10967 (ms)Pass: FilterOpNodes - 0.01621 (ms)Pass: UnitarySynthesis - 0.00477 (ms)Pass: HighLevelSynthesis - 0.00668 (ms)Pass: BasisTranslator - 0.09346 (ms)Pass: Depth - 0.02265 (ms)Pass: Size - 0.00286 (ms)Pass: MinimumPoint - 0.01359 (ms)Pass: ConsolidateBlocks - 0.03743 (ms)Pass: UnitarySynthesis - 0.00310 (ms)Pass: RemoveIdentityEquivalent - 0.00358 (ms)Pass: Optimize1qGatesDecomposition - 0.04387 (ms)Pass: CommutativeCancellation - 0.08559 (ms)Pass: ContractIdleWiresInControlFlow - 0.00215 (ms)Pass: GatesInBasis - 0.00954 (ms)Pass: Depth - 0.02003 (ms)Pass: Size - 0.00191 (ms)Pass: MinimumPoint - 0.03290 (ms)Pass: ConsolidateBlocks - 0.03791 (ms)Pass: UnitarySynthesis - 0.00334 (ms)Pass: RemoveIdentityEquivalent - 0.00310 (ms)Pass: Optimize1qGatesDecomposition - 0.03028 (ms)Pass: CommutativeCancellation - 0.09465 (ms)Pass: ContractIdleWiresInControlFlow - 0.00119 (ms)Pass: GatesInBasis - 0.00620 (ms)Pass: Depth - 0.01907 (ms)Pass: Size - 0.00143 (ms)Pass: MinimumPoint - 0.00381 (ms)Pass: ContainsInstruction - 0.00525 (ms)Pass: InstructionDurationCheck - 0.00334 (ms)/home/bhabani/miniconda3/lib/python3.12/site-packages/qiskit_ibm_runtime/qiskit_runtime_service.py:1183: UserWarning: This instance has met its usage limit. Workloads will not run until time is made available. Check https://quantum.cloud.ibm.com/instances/crn%3Av1%3Abluemix%3Apublic%3Aquantum-computing%3Aus-east%3Aa%2F1d342512c31c428b84aa39aff3dc58c9%3A579067a2-d74c-470f-a9ac-6413d100c97b%3A%3A for more details.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/bhabani/Kishore/Tangelo_2.0_hardware/run_dmet_sqd.py", line 203, in <module>
+    energy = dmet_calc.simulate()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/bhabani/Kishore/Tangelo_2.0_hardware/tangelo/problem_decomposition/dmet/dmet_problem_decomposition.py", line 297, in simulate
+    self.chemical_potential = self.optimizer(self._oneshot_loop, self.initial_chemical_potential)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bhabani/Kishore/Tangelo_2.0_hardware/tangelo/problem_decomposition/dmet/dmet_problem_decomposition.py", line 785, in _default_optimizer
+    return self._noisy_root_optimizer(func, var_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bhabani/Kishore/Tangelo_2.0_hardware/tangelo/problem_decomposition/dmet/dmet_problem_decomposition.py", line 823, in _noisy_root_optimizer
+    f0 = evaluate(mu0)
+         ^^^^^^^^^^^^^
+  File "/home/bhabani/Kishore/Tangelo_2.0_hardware/tangelo/problem_decomposition/dmet/dmet_problem_decomposition.py", line 803, in evaluate
+    residuals = np.array([func(mu).real for _ in range(n_eval)], dtype=float)
+                          ^^^^^^^^
+  File "/home/bhabani/Kishore/Tangelo_2.0_hardware/tangelo/problem_decomposition/dmet/dmet_problem_decomposition.py", line 533, in _oneshot_loop
+    solver_fragment.simulate()
+  File "/home/bhabani/Kishore/Tangelo_2.0_hardware/tangelo/algorithms/sqd_solver.py", line 181, in simulate
+    result = job.result()
+             ^^^^^^^^^^^^
+  File "/home/bhabani/miniconda3/lib/python3.12/site-packages/qiskit_ibm_runtime/runtime_job_v2.py", line 126, in result
+    self.wait_for_final_state(timeout=timeout)
+  File "/home/bhabani/miniconda3/lib/python3.12/site-packages/qiskit_ibm_runtime/runtime_job_v2.py", line 244, in wait_for_final_state
+    time.sleep(0.1)
+KeyboardInterrupt

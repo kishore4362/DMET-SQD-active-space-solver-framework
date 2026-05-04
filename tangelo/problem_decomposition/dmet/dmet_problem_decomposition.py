@@ -27,6 +27,7 @@ from tangelo.problem_decomposition.dmet import _helpers as helpers
 from tangelo.problem_decomposition.problem_decomposition import ProblemDecomposition
 from tangelo.problem_decomposition.electron_localization import iao_localization, meta_lowdin_localization, nao_localization
 from tangelo.algorithms import FCISolver, CCSDSolver, VQESolver, MP2Solver
+from tangelo.algorithms.sqd_solver import SQDSolver
 from tangelo.toolboxes.post_processing.mc_weeny_rdm_purification import mcweeny_purify_2rdm
 from tangelo.toolboxes.molecular_computation.rdms import pad_rdms_with_frozen_orbitals_restricted, \
     pad_rdms_with_frozen_orbitals_unrestricted
@@ -100,6 +101,19 @@ class DMETProblemDecomposition(ProblemDecomposition):
         self.optimizer: Callable[..., float] = copt_dict.pop("optimizer", self._default_optimizer)
         self.initial_chemical_potential: float = copt_dict.pop("initial_chemical_potential", 0.0)
         self.solvers_options: List[dict] = copt_dict.pop("solvers_options", list())
+        self.noisy_optimizer_options: dict = copt_dict.pop("noisy_optimizer_options", {
+            "residual_evaluations": 3,
+            "residual_tol": 5e-3,
+            "bracket_radius": 0.25,
+            "bracket_growth": 2.0,
+            "max_bracket_steps": 8,
+            "mu_min": -5.0,
+            "mu_max": 5.0,
+            "brent_tol": 1e-4,
+            "damped_step": 0.25,
+            "max_mu_step": 0.5,
+            "max_damped_steps": 12,
+        })
         self.virtual_orbital_threshold: float = copt_dict.pop("virtual_orbital_threshold", 1e-13)
         self.verbose: bool = copt_dict.pop("verbose", False)
 
@@ -186,6 +200,8 @@ class DMETProblemDecomposition(ProblemDecomposition):
                     self.solvers_options.append(dict())
                 elif solver.lower() == "vqe":
                     self.solvers_options.append(default_vqe_options)
+                elif solver.lower() == "sqd":
+                    self.solvers_options.append(dict())
                 else:
                     raise NotImplementedError(f"Solver {solver} is not implemented.")
         elif isinstance(self.solvers_options, dict):
@@ -197,6 +213,7 @@ class DMETProblemDecomposition(ProblemDecomposition):
         # Results of the DMET loops.
         self.chemical_potential = None
         self.dmet_energy = None
+        self.electron_residual = None
 
         # Define during the building phase (self.build()).
         self.orbitals = None
@@ -280,13 +297,24 @@ class DMETProblemDecomposition(ProblemDecomposition):
         self.chemical_potential = self.optimizer(self._oneshot_loop, self.initial_chemical_potential)
         self.chemical_potential = self.chemical_potential.real
 
-        # run one more time to save results
-        _ = self._oneshot_loop(self.chemical_potential, save_results=True)
+        if getattr(self, "_skip_final_oneshot", False):
+            final_mu = getattr(self, "_final_cached_mu", None)
+            if final_mu is not None and np.isclose(self.chemical_potential, final_mu):
+                self.electron_residual = getattr(self, "_final_cached_residual")
+                self.dmet_energy = getattr(self, "_final_cached_energy")
+                if self.verbose:
+                    print(" \t[DMET] Reusing converged optimizer result; skipping final oneshot loop.")
+            else:
+                self.electron_residual = self._oneshot_loop(self.chemical_potential, save_results=True)
+        else:
+            # Run one more time to save results and retain the final electron residual.
+            self.electron_residual = self._oneshot_loop(self.chemical_potential, save_results=True)
 
         if self.verbose:
             print(" \t*** DMET Cycle Done *** ")
             print(" \tDMET Energy ( a.u. ) = " + "{:17.10f}".format(self.dmet_energy))
             print(" \tChemical Potential   = " + "{:17.10f}".format(self.chemical_potential))
+            print(" \tElectron Residual    = " + "{:17.10f}".format(self.electron_residual))
 
         return self.dmet_energy
 
@@ -427,6 +455,7 @@ class DMETProblemDecomposition(ProblemDecomposition):
         self.n_iter += 1
         if self.verbose:
             print(" \tIteration = ", self.n_iter)
+            print(f" \tChemical Potential (mu) = {chemical_potential.real:17.10f}")
             print(" \t----------------")
             print(" ")
 
@@ -497,10 +526,32 @@ class DMETProblemDecomposition(ProblemDecomposition):
                 solver_fragment = CCSDSolver(dummy_mol, **solver_options)
                 solver_fragment.simulate()
                 onerdm, twordm = solver_fragment.get_rdm()
+                if self.verbose:
+                    n_active_e = getattr(dummy_mol, "n_active_electrons", None)
+                    trace_onerdm = np.trace(onerdm)
+                    print(
+                        f"\t\tCCSD diag: n_active_mos={dummy_mol.n_active_mos}, "
+                        f"n_active_electrons={n_active_e}, trace(onerdm)={trace_onerdm}"
+                    )
             elif solver_fragment == "mp2":
                 solver_fragment = MP2Solver(dummy_mol, **solver_options)
                 solver_fragment.simulate()
                 onerdm, twordm = solver_fragment.get_rdm()
+            elif solver_fragment == "sqd":
+                system = {"molecule":dummy_mol}
+                solver_fragment = SQDSolver({**system,**solver_options})
+                solver_fragment.build()
+                solver_fragment.simulate()
+                onerdm, twordm = solver_fragment.get_rdm()
+                if self.verbose:
+                    n_active_e = getattr(dummy_mol, "n_active_electrons", None)
+                    trace_onerdm = np.trace(onerdm)
+                    print(
+                        f"\t\tSQD diag: n_active_mos={dummy_mol.n_active_mos}, "
+                        f"n_active_electrons={n_active_e}, trace(onerdm)={trace_onerdm}"
+                    )
+                if save_results:
+                  self.solver_fragment_dict[i] = solver_fragment
             elif solver_fragment == "vqe":
                 if resample:
                     solver_fragment = self.solver_fragment_dict[i]
@@ -550,11 +601,15 @@ class DMETProblemDecomposition(ProblemDecomposition):
 
         energy_temp += self.orbitals.core_constant_energy
         self.dmet_energy = energy_temp.real
+        self.electron_residual = number_of_electron - self.orbitals.number_active_electrons
+
+        if self.verbose:
+            print(f"\tElectron Residual = {self.electron_residual}")
 
         if save_results:
             self.scf_fragments = scf_fragments
 
-        return number_of_electron - self.orbitals.number_active_electrons
+        return self.electron_residual
 
     def get_resources(self):
         """Estimate the resources required by DMET. Only supports fragments
@@ -737,6 +792,148 @@ class DMETProblemDecomposition(ProblemDecomposition):
             float: The chemical potential found by the optimizer.
         """
 
-        result = scipy.optimize.newton(func, var_params, tol=1e-5)
+        if any(solver.lower() == "sqd" for solver in self.fragment_solvers):
+            return self._noisy_root_optimizer(func, var_params)
+
+        result = scipy.optimize.newton(func, var_params, tol=1e-4)
 
         return result.real
+
+    def _noisy_root_optimizer(self, func, var_params):
+        """Robust one-dimensional root finder for noisy SQD DMET residuals."""
+
+        options = self.noisy_optimizer_options
+        residual_cache = dict()
+
+        def evaluate(mu):
+            mu = float(np.real(mu))
+            if mu in residual_cache:
+                return residual_cache[mu]
+
+            n_eval = max(1, int(options["residual_evaluations"]))
+            residuals = np.array([func(mu).real for _ in range(n_eval)], dtype=float)
+            residual = float(np.median(residuals))
+            residual_cache[mu] = residual
+
+            if self.verbose and n_eval > 1:
+                spread = float(np.max(np.abs(residuals - residual)))
+                print(
+                    "\tNoisy optimizer residual: "
+                    f"mu={mu:.6f}, median={residual:.6f}, spread={spread:.6f}, "
+                    f"samples={residuals.tolist()}"
+                )
+
+            return residual
+
+        tol = float(options["residual_tol"])
+        mu0 = float(np.real(var_params))
+        mu_min = float(options["mu_min"])
+        mu_max = float(options["mu_max"])
+        mu0 = float(np.clip(mu0, mu_min, mu_max))
+
+        f0 = evaluate(mu0)
+        if self.verbose:
+            print(
+                "\tNoisy optimizer start: "
+                f"mu0={mu0:.6f}, residual={f0:.6f}, residual_tol={tol:.6f}"
+            )
+        if abs(f0) <= tol:
+            if self.verbose:
+                print("\tNoisy optimizer converged at initial chemical potential.")
+            return mu0
+
+        radius = float(options["bracket_radius"])
+        growth = float(options["bracket_growth"])
+        bracket = None
+
+        for step_idx in range(int(options["max_bracket_steps"])):
+            left = float(np.clip(mu0 - radius, mu_min, mu_max))
+            right = float(np.clip(mu0 + radius, mu_min, mu_max))
+            f_left = evaluate(left)
+            f_right = evaluate(right)
+
+            if self.verbose:
+                print(
+                    "\tNoisy optimizer bracket scan: "
+                    f"step={step_idx}, radius={radius:.6f}, "
+                    f"left=({left:.6f}, {f_left:.6f}), "
+                    f"center=({mu0:.6f}, {f0:.6f}), "
+                    f"right=({right:.6f}, {f_right:.6f})"
+                )
+
+            if abs(f_left) <= tol:
+                if self.verbose:
+                    print("\tNoisy optimizer accepted left bracket endpoint.")
+                return left
+            if abs(f_right) <= tol:
+                if self.verbose:
+                    print("\tNoisy optimizer accepted right bracket endpoint.")
+                return right
+
+            if f_left * f0 < 0:
+                bracket = (left, mu0)
+                break
+            if f0 * f_right < 0:
+                bracket = (mu0, right)
+                break
+            if f_left * f_right < 0:
+                bracket = (left, right)
+                break
+
+            if left <= mu_min and right >= mu_max:
+                break
+            radius *= growth
+
+        if bracket is not None:
+            if self.verbose:
+                print(
+                    "\tNoisy optimizer using Brent root solve: "
+                    f"bracket=({bracket[0]:.6f}, {bracket[1]:.6f})"
+                )
+            root = scipy.optimize.brentq(
+                lambda mu: evaluate(mu),
+                bracket[0],
+                bracket[1],
+                xtol=float(options["brent_tol"]),
+            )
+            if self.verbose:
+                print(f"\tNoisy optimizer Brent converged: mu={float(np.real(root)):.6f}")
+            return float(np.real(root))
+
+        mu = mu0
+        damped_step = float(options["damped_step"])
+        max_mu_step = float(options["max_mu_step"])
+        if self.verbose:
+            print(
+                "\tNoisy optimizer falling back to damped updates: "
+                f"damped_step={damped_step:.6f}, max_mu_step={max_mu_step:.6f}"
+            )
+        for step_idx in range(int(options["max_damped_steps"])):
+            residual = evaluate(mu)
+            if abs(residual) <= tol:
+                if self.verbose:
+                    print(f"\tNoisy optimizer damped updates converged: mu={mu:.6f}")
+                return mu
+
+            step = float(np.clip(damped_step * residual, -max_mu_step, max_mu_step))
+            mu_new = float(np.clip(mu - step, mu_min, mu_max))
+            if self.verbose:
+                print(
+                    "\tNoisy optimizer damped step: "
+                    f"step={step_idx}, mu={mu:.6f}, residual={residual:.6f}, "
+                    f"delta_mu={-step:.6f}, mu_new={mu_new:.6f}"
+                )
+            if mu_new == mu:
+                if self.verbose:
+                    print("\tNoisy optimizer damped updates stalled at bounds.")
+                break
+            mu = mu_new
+
+        warnings.warn(
+            "DMET noisy SQD optimizer did not bracket a root cleanly; "
+            "returning the last damped chemical-potential estimate.",
+            RuntimeWarning,
+        )
+        if self.verbose:
+            print(f"\tNoisy optimizer returning fallback estimate: mu={mu:.6f}")
+        return float(np.real(mu))

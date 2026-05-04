@@ -1,0 +1,322 @@
+Resuming from checkpoint. 1 points already completed.
+
+=== Relaxed scan: C-C distance = 1.40 A ===
+geometric-optimize called with the following command line:
+run_dmet_sqd_hardware.py
+
+                                        [91m())))))))))))))))/[0m                     
+                                    [91m())))))))))))))))))))))))),[0m                
+                                [91m*)))))))))))))))))))))))))))))))))[0m             
+                        [94m#,[0m    [91m()))))))))/[0m                [91m.)))))))))),[0m          
+                      [94m#%%%%,[0m  [91m())))))[0m                        [91m.))))))))*[0m        
+                      [94m*%%%%%%,[0m  [91m))[0m              [93m..[0m              [91m,))))))).[0m      
+                        [94m*%%%%%%,[0m         [93m***************/.[0m        [91m.)))))))[0m     
+                [94m#%%/[0m      [94m(%%%%%%,[0m    [93m/*********************.[0m       [91m)))))))[0m    
+              [94m.%%%%%%#[0m      [94m*%%%%%%,[0m  [93m*******/,[0m     [93m**********,[0m      [91m.))))))[0m   
+                [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [93m**[0m              [93m********[0m      [91m.))))))[0m  
+          [94m##[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m                  [93m,******[0m      [91m/)))))[0m  
+        [94m%%%%%%[0m      [94m.%%%%%%#[0m      [94m*%%%%%%,[0m    [92m,/////.[0m       [93m******[0m      [91m))))))[0m 
+      [94m#%[0m      [94m%%[0m      [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [92m////////,[0m      [93m*****/[0m     [91m,)))))[0m 
+    [94m#%%[0m  [94m%%%[0m  [94m%%%#[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m  [92m///////.[0m     [93m/*****[0m      [91m))))).[0m
+  [94m#%%%%.[0m      [94m%%%%%#[0m      [94m/%%%%%%*[0m      [94m#%%%%%%[0m   [92m/////)[0m     [93m******[0m      [91m))))),[0m
+    [94m#%%%%##%[0m  [94m%%%#[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m  [92m///////.[0m     [93m/*****[0m      [91m))))).[0m
+      [94m##[0m     [94m%%%[0m      [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [92m////////.[0m      [93m*****/[0m     [91m,)))))[0m 
+        [94m#%%%%#[0m      [94m/%%%%%%/[0m      [94m(%%%%%%[0m      [92m/)/)//[0m       [93m******[0m      [91m))))))[0m 
+          [94m##[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m                  [93m*******[0m      [91m))))))[0m  
+                [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [93m**.[0m             [93m/*******[0m      [91m.))))))[0m  
+              [94m*%%%%%%/[0m      [94m(%%%%%%[0m   [93m********/*..,*/*********[0m       [91m*))))))[0m   
+                [94m#%%/[0m      [94m(%%%%%%,[0m    [93m*********************/[0m        [91m)))))))[0m    
+                        [94m*%%%%%%,[0m         [93m,**************/[0m         [91m,))))))/[0m     
+                      [94m(%%%%%%[0m   [91m()[0m                              [91m))))))))[0m       
+                      [94m#%%%%,[0m  [91m())))))[0m                        [91m,)))))))),[0m        
+                        [94m#,[0m    [91m())))))))))[0m                [91m,)))))))))).[0m          
+                                 [91m()))))))))))))))))))))))))))))))/[0m             
+                                    [91m())))))))))))))))))))))))).[0m                
+                                         [91m())))))))))))))),[0m                     
+
+-=# [1;94m geomeTRIC started. Version: 1.1 [0m #=-
+Current date and time: 2026-05-01 17:33:32
+#========================================================#
+#| [92m    Arguments passed to driver run_optimizer():     [0m |#
+#========================================================#
+constraints               /tmp/tmp2m6gg39o/constraints.txt 
+customengine              <pyscf.geomopt.geometric_solver.PySCFEngine object at 0x7f4b04d84a40> 
+input                     /tmp/tmp4u_4kqai/4e815ac6-2fd6-4424-aff4-c5906f9a5f0b 
+logIni                    /home/bhabani/miniconda3/lib/python3.12/site-packages/pyscf/geomopt/log.ini 
+maxiter                   100 
+----------------------------------------------------------
+Custom engine selected.
+$set
+distance 1 5 1.40000000
+Bonds will be generated from interatomic distances less than 1.20 times sum of covalent radii
+24 internal coordinates being used (instead of 24 Cartesians)
+Internal coordinate system (atoms numbered from 1):
+Distance 1-5
+Distance 1-2
+Distance 1-3
+Distance 1-4
+Distance 5-6
+Distance 5-7
+Distance 5-8
+Angle 2-1-3
+Angle 2-1-4
+Angle 2-1-5
+Angle 3-1-4
+Angle 3-1-5
+Angle 4-1-5
+Angle 1-5-6
+Angle 1-5-7
+Angle 1-5-8
+Angle 6-5-7
+Angle 6-5-8
+Angle 7-5-8
+Dihedral 2-1-5-6
+Dihedral 2-1-5-7
+Dihedral 2-1-5-8
+Dihedral 3-1-5-6
+Dihedral 3-1-5-7
+Dihedral 3-1-5-8
+Dihedral 4-1-5-6
+Dihedral 4-1-5-7
+Dihedral 4-1-5-8
+Translation-X 1-8
+Translation-Y 1-8
+Translation-Z 1-8
+Rotation-A 1-8
+Rotation-B 1-8
+Rotation-C 1-8
+<class 'geometric.internal.Distance'> : 7
+<class 'geometric.internal.Angle'> : 12
+<class 'geometric.internal.Dihedral'> : 9
+<class 'geometric.internal.TranslationX'> : 1
+<class 'geometric.internal.TranslationY'> : 1
+<class 'geometric.internal.TranslationZ'> : 1
+<class 'geometric.internal.RotationA'> : 1
+<class 'geometric.internal.RotationB'> : 1
+<class 'geometric.internal.RotationC'> : 1
+Constraint                         Current      Target       Diff.
+Distance 1-5                       1.40000     1.40000    -0.00000
+> ===== Optimization Info: ====
+> Job type: Energy minimization
+> Maximum number of optimization cycles: 100
+> Initial / maximum trust radius (Angstrom): 0.100 / 0.300
+> Convergence Criteria:
+> Will converge when all 5 criteria are reached:
+>  |Delta-E| < 1.00e-06
+>  RMS-Ortho-Grad < 3.00e-04
+>  Max-Ortho-Grad < 4.50e-04
+>  RMS-Disp  < 1.20e-03
+>  Max-Disp  < 1.80e-03
+> 
+> Constraints are requested. The following criterion is added:
+>  Max Constraint Violation (in Angstroms/degrees) < 1.00e-02 
+> === End Optimization Info ===
+WARN: Mole.unit (Angstrom) is changed to Bohr
+Step    0 : Gradient = 9.033e-03/1.014e-02 (rms/max) Energy = -78.7803822925
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41561e-01 3.41561e-01 4.56205e-01
+Step    1 : Displace = [0m3.523e-02[0m/[0m4.071e-02[0m (rms/max) Trust = 1.000e-01 (=) Grad_T = [0m1.587e-03[0m/[0m1.603e-03[0m (rms/max) E (change) = -78.7817780480 ([0m-1.396e-03[0m) Quality = [0m0.816[0m
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41561e-01 3.41806e-01 5.05397e-01
+Step    2 : Displace = [0m5.063e-03[0m/[0m5.849e-03[0m (rms/max) Trust = 1.414e-01 ([92m+[0m) Grad_T = [92m8.342e-05[0m/[92m1.403e-04[0m (rms/max) E (change) = -78.7818234005 ([0m-4.535e-05[0m) Quality = [0m1.018[0m
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41561e-01 3.49849e-01 5.00276e-01
+Step    3 : Displace = [92m1.884e-04[0m/[92m2.184e-04[0m (rms/max) Trust = 2.000e-01 ([92m+[0m) Grad_T = [92m3.254e-06[0m/[92m4.894e-06[0m (rms/max) E (change) = -78.7818234535 ([92m-5.301e-08[0m) Quality = [0m0.966[0m
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41561e-01 3.49849e-01 5.00276e-01
+Converged! =D
+
+    #==========================================================================#
+    #| If this code has benefited your research, please support us by citing: |#
+    #|                                                                        |#
+    #| Wang, L.-P.; Song, C.C. (2016) "Geometry optimization made simple with |#
+    #| translation and rotation coordinates", J. Chem, Phys. 144, 214108.     |#
+    #| http://dx.doi.org/10.1063/1.4952956                                    |#
+    #==========================================================================#
+    Time elapsed since start of run_optimizer: 1.042 seconds
+WARN: ECP not specified. The basis set CRENBL include an ECP. Recommended ECP: CRENBL.
+/home/bhabani/Kishore/Tangelo_2.0_hardware/tangelo/problem_decomposition/dmet/dmet_problem_decomposition.py:168: RuntimeWarning: The mean field will be recomputed even if one has been provided by the user.
+  warnings.warn("The mean field will be recomputed even if one has been provided by the user.", RuntimeWarning)
+	[Optimizer] Evaluating mu=0.000000 with 1 hardware jobs...
+ 	Iteration =  1
+ 	Chemical Potential (mu) =      0.0000000000
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[7.87729193e-17 2.57913653e-17 4.95056122e-18 4.09422827e-17
+ 1.25131312e-16 1.51662648e-16 7.54882783e-06 1.68938351e-03
+ 1.46570297e-02 1.46570539e-02 1.00000000e+00 1.98534295e+00
+ 1.98534297e+00 1.99831062e+00 1.99999245e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[6.53064713e-16 8.98413068e-17 4.25334209e-17 6.63678914e-18
+ 1.92122949e-17 8.66153650e-17 7.54882783e-06 1.68938351e-03
+ 1.46570297e-02 1.46570539e-02 1.00000000e+00 1.98534295e+00
+ 1.98534297e+00 1.99831062e+00 1.99999245e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -61.47408765460377
+		Number of Electrons in Fragment = 9.005353094830808
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+		CCSD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=4.0
+		Fragment Energy = -61.365044398589845
+		Number of Electrons in Fragment = 9.001236729480286
+	Electron Residual = 0.0065898243110922294
+	[Optimizer] Evaluating mu=-0.050000 with 1 hardware jobs...
+ 	Iteration =  2
+ 	Chemical Potential (mu) =     -0.0500000000
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[7.87729193e-17 2.57913653e-17 4.95056122e-18 4.09422827e-17
+ 1.25131312e-16 1.51662648e-16 7.54882783e-06 1.68938351e-03
+ 1.46570297e-02 1.46570539e-02 1.00000000e+00 1.98534295e+00
+ 1.98534297e+00 1.99831062e+00 1.99999245e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[6.53064713e-16 8.98413068e-17 4.25334209e-17 6.63678914e-18
+ 1.92122949e-17 8.66153650e-17 7.54882783e-06 1.68938351e-03
+ 1.46570297e-02 1.46570539e-02 1.00000000e+00 1.98534295e+00
+ 1.98534297e+00 1.99831062e+00 1.99999245e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -61.34342666857913
+		Number of Electrons in Fragment = 8.95972199578916
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+		CCSD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=4.0
+		Fragment Energy = -61.22786233290839
+		Number of Electrons in Fragment = 8.953197988930688
+	Electron Residual = -0.08708001528015075
+	[Optimizer] Evaluating mu=0.050000 with 1 hardware jobs...
+ 	Iteration =  3
+ 	Chemical Potential (mu) =      0.0500000000
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[7.87729193e-17 2.57913653e-17 4.95056122e-18 4.09422827e-17
+ 1.25131312e-16 1.51662648e-16 7.54882783e-06 1.68938351e-03
+ 1.46570297e-02 1.46570539e-02 1.00000000e+00 1.98534295e+00
+ 1.98534297e+00 1.99831062e+00 1.99999245e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[6.53064713e-16 8.98413068e-17 4.25334209e-17 6.63678914e-18
+ 1.92122949e-17 8.66153650e-17 7.54882783e-06 1.68938351e-03
+ 1.46570297e-02 1.46570539e-02 1.00000000e+00 1.98534295e+00
+ 1.98534297e+00 1.99831062e+00 1.99999245e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -61.603883129370345
+		Number of Electrons in Fragment = 9.051155955586387
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+		CCSD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=4.0
+		Fragment Energy = -61.50055128869931
+		Number of Electrons in Fragment = 9.049116763130558
+	Electron Residual = 0.1002727187169441
+[Optimizer] Bracket found: (-0.05, 0.0). Starting Brent search...
+	[OptimizerCache] Found mu=-0.050000 in cache. Skipping hardware calls.
+	[OptimizerCache] Found mu=0.000000 in cache. Skipping hardware calls.
+	[Optimizer] Evaluating mu=-0.003518 with 1 hardware jobs...
+ 	Iteration =  4
+ 	Chemical Potential (mu) =     -0.0035175807
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[7.87729193e-17 2.57913653e-17 4.95056122e-18 4.09422827e-17
+ 1.25131312e-16 1.51662648e-16 7.54882783e-06 1.68938351e-03
+ 1.46570297e-02 1.46570539e-02 1.00000000e+00 1.98534295e+00
+ 1.98534297e+00 1.99831062e+00 1.99999245e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[6.53064713e-16 8.98413068e-17 4.25334209e-17 6.63678914e-18
+ 1.92122949e-17 8.66153650e-17 7.54882783e-06 1.68938351e-03
+ 1.46570297e-02 1.46570539e-02 1.00000000e+00 1.98534295e+00
+ 1.98534297e+00 1.99831062e+00 1.99999245e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -61.46492356304314
+		Number of Electrons in Fragment = 9.002137790675821
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+		CCSD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=3.9999999999999996
+		Fragment Energy = -61.35544697702423
+		Number of Electrons in Fragment = 8.997861818750359
+	Electron Residual = -3.905738203968667e-07
+	[Optimizer] Evaluating mu=-0.003517 with 1 hardware jobs...
+ 	Iteration =  5
+ 	Chemical Potential (mu) =     -0.0035173722
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[7.87729193e-17 2.57913653e-17 4.95056122e-18 4.09422827e-17
+ 1.25131312e-16 1.51662648e-16 7.54882783e-06 1.68938351e-03
+ 1.46570297e-02 1.46570539e-02 1.00000000e+00 1.98534295e+00
+ 1.98534297e+00 1.99831062e+00 1.99999245e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[6.53064713e-16 8.98413068e-17 4.25334209e-17 6.63678914e-18
+ 1.92122949e-17 8.66153650e-17 7.54882783e-06 1.68938351e-03
+ 1.46570297e-02 1.46570539e-02 1.00000000e+00 1.98534295e+00
+ 1.98534297e+00 1.99831062e+00 1.99999245e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -61.46492410628704
+		Number of Electrons in Fragment = 9.002137981208627
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+		CCSD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=4.0
+		Fragment Energy = -61.35544754607949
+		Number of Electrons in Fragment = 8.997862018813349
+	Electron Residual = 2.19770868170599e-11
+	[Optimizer] Evaluating mu=-0.003517 with 1 hardware jobs...
+ 	Iteration =  6
+ 	Chemical Potential (mu) =     -0.0035173772
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[7.87729193e-17 2.57913653e-17 4.95056122e-18 4.09422827e-17
+ 1.25131312e-16 1.51662648e-16 7.54882783e-06 1.68938351e-03
+ 1.46570297e-02 1.46570539e-02 1.00000000e+00 1.98534295e+00
+ 1.98534297e+00 1.99831062e+00 1.99999245e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[6.53064713e-16 8.98413068e-17 4.25334209e-17 6.63678914e-18
+ 1.92122949e-17 8.66153650e-17 7.54882783e-06 1.68938351e-03
+ 1.46570297e-02 1.46570539e-02 1.00000000e+00 1.98534295e+00
+ 1.98534297e+00 1.99831062e+00 1.99999245e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -61.464924093257906
+		Number of Electrons in Fragment = 9.002137976638892
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+		CCSD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=3.9999999999999996
+		Fragment Energy = -61.355447532431846
+		Number of Electrons in Fragment = 8.997862014013863
+	Electron Residual = -9.347246532342979e-09
+	[OptimizerCache] Found mu=-0.003517 in cache. Skipping hardware calls.
+[Optimizer] Brent converged successfully at mu=-0.003517
+ 	[DMET] Reusing converged optimizer result; skipping final oneshot loop.
+ 	*** DMET Cycle Done *** 
+ 	DMET Energy ( a.u. ) =    -78.8784743238
+ 	Chemical Potential   =     -0.0035173722
+ 	Electron Residual    =      0.0000000000
+DMET energy (Hartree): -78.878474
+Converged DMET chemical potential: -0.0035173722
+Final DMET electron residual: 0.0000000000

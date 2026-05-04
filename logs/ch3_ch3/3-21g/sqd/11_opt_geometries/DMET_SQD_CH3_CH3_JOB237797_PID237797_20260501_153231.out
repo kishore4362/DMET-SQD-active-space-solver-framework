@@ -1,0 +1,779 @@
+Resuming from checkpoint. 0 points already completed.
+
+=== Relaxed scan: C-C distance = 1.50 A ===
+geometric-optimize called with the following command line:
+run_dmet_sqd_hardware.py
+
+                                        [91m())))))))))))))))/[0m                     
+                                    [91m())))))))))))))))))))))))),[0m                
+                                [91m*)))))))))))))))))))))))))))))))))[0m             
+                        [94m#,[0m    [91m()))))))))/[0m                [91m.)))))))))),[0m          
+                      [94m#%%%%,[0m  [91m())))))[0m                        [91m.))))))))*[0m        
+                      [94m*%%%%%%,[0m  [91m))[0m              [93m..[0m              [91m,))))))).[0m      
+                        [94m*%%%%%%,[0m         [93m***************/.[0m        [91m.)))))))[0m     
+                [94m#%%/[0m      [94m(%%%%%%,[0m    [93m/*********************.[0m       [91m)))))))[0m    
+              [94m.%%%%%%#[0m      [94m*%%%%%%,[0m  [93m*******/,[0m     [93m**********,[0m      [91m.))))))[0m   
+                [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [93m**[0m              [93m********[0m      [91m.))))))[0m  
+          [94m##[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m                  [93m,******[0m      [91m/)))))[0m  
+        [94m%%%%%%[0m      [94m.%%%%%%#[0m      [94m*%%%%%%,[0m    [92m,/////.[0m       [93m******[0m      [91m))))))[0m 
+      [94m#%[0m      [94m%%[0m      [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [92m////////,[0m      [93m*****/[0m     [91m,)))))[0m 
+    [94m#%%[0m  [94m%%%[0m  [94m%%%#[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m  [92m///////.[0m     [93m/*****[0m      [91m))))).[0m
+  [94m#%%%%.[0m      [94m%%%%%#[0m      [94m/%%%%%%*[0m      [94m#%%%%%%[0m   [92m/////)[0m     [93m******[0m      [91m))))),[0m
+    [94m#%%%%##%[0m  [94m%%%#[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m  [92m///////.[0m     [93m/*****[0m      [91m))))).[0m
+      [94m##[0m     [94m%%%[0m      [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [92m////////.[0m      [93m*****/[0m     [91m,)))))[0m 
+        [94m#%%%%#[0m      [94m/%%%%%%/[0m      [94m(%%%%%%[0m      [92m/)/)//[0m       [93m******[0m      [91m))))))[0m 
+          [94m##[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m                  [93m*******[0m      [91m))))))[0m  
+                [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [93m**.[0m             [93m/*******[0m      [91m.))))))[0m  
+              [94m*%%%%%%/[0m      [94m(%%%%%%[0m   [93m********/*..,*/*********[0m       [91m*))))))[0m   
+                [94m#%%/[0m      [94m(%%%%%%,[0m    [93m*********************/[0m        [91m)))))))[0m    
+                        [94m*%%%%%%,[0m         [93m,**************/[0m         [91m,))))))/[0m     
+                      [94m(%%%%%%[0m   [91m()[0m                              [91m))))))))[0m       
+                      [94m#%%%%,[0m  [91m())))))[0m                        [91m,)))))))),[0m        
+                        [94m#,[0m    [91m())))))))))[0m                [91m,)))))))))).[0m          
+                                 [91m()))))))))))))))))))))))))))))))/[0m             
+                                    [91m())))))))))))))))))))))))).[0m                
+                                         [91m())))))))))))))),[0m                     
+
+-=# [1;94m geomeTRIC started. Version: 1.1 [0m #=-
+Current date and time: 2026-05-01 15:32:31
+#========================================================#
+#| [92m    Arguments passed to driver run_optimizer():     [0m |#
+#========================================================#
+constraints               /tmp/tmp54gi1c5r/constraints.txt 
+customengine              <pyscf.geomopt.geometric_solver.PySCFEngine object at 0x7fc7b7bac0e0> 
+input                     /tmp/tmplwcqdv1h/fbb02be2-d68b-4dab-a4e4-b0932362538e 
+logIni                    /home/bhabani/miniconda3/lib/python3.12/site-packages/pyscf/geomopt/log.ini 
+maxiter                   100 
+----------------------------------------------------------
+Custom engine selected.
+$set
+distance 1 5 1.50000000
+Bonds will be generated from interatomic distances less than 1.20 times sum of covalent radii
+24 internal coordinates being used (instead of 24 Cartesians)
+Internal coordinate system (atoms numbered from 1):
+Distance 1-5
+Distance 1-2
+Distance 1-3
+Distance 1-4
+Distance 5-6
+Distance 5-7
+Distance 5-8
+Angle 2-1-3
+Angle 2-1-4
+Angle 2-1-5
+Angle 3-1-4
+Angle 3-1-5
+Angle 4-1-5
+Angle 1-5-6
+Angle 1-5-7
+Angle 1-5-8
+Angle 6-5-7
+Angle 6-5-8
+Angle 7-5-8
+Dihedral 2-1-5-6
+Dihedral 2-1-5-7
+Dihedral 2-1-5-8
+Dihedral 3-1-5-6
+Dihedral 3-1-5-7
+Dihedral 3-1-5-8
+Dihedral 4-1-5-6
+Dihedral 4-1-5-7
+Dihedral 4-1-5-8
+Translation-X 1-8
+Translation-Y 1-8
+Translation-Z 1-8
+Rotation-A 1-8
+Rotation-B 1-8
+Rotation-C 1-8
+<class 'geometric.internal.Distance'> : 7
+<class 'geometric.internal.Angle'> : 12
+<class 'geometric.internal.Dihedral'> : 9
+<class 'geometric.internal.TranslationX'> : 1
+<class 'geometric.internal.TranslationY'> : 1
+<class 'geometric.internal.TranslationZ'> : 1
+<class 'geometric.internal.RotationA'> : 1
+<class 'geometric.internal.RotationB'> : 1
+<class 'geometric.internal.RotationC'> : 1
+Constraint                         Current      Target       Diff.
+Distance 1-5                       1.50000     1.50000    -0.00000
+> ===== Optimization Info: ====
+> Job type: Energy minimization
+> Maximum number of optimization cycles: 100
+> Initial / maximum trust radius (Angstrom): 0.100 / 0.300
+> Convergence Criteria:
+> Will converge when all 5 criteria are reached:
+>  |Delta-E| < 1.00e-06
+>  RMS-Ortho-Grad < 3.00e-04
+>  Max-Ortho-Grad < 4.50e-04
+>  RMS-Disp  < 1.20e-03
+>  Max-Disp  < 1.80e-03
+> 
+> Constraints are requested. The following criterion is added:
+>  Max Constraint Violation (in Angstroms/degrees) < 1.00e-02 
+> === End Optimization Info ===
+WARN: Mole.unit (Angstrom) is changed to Bohr
+Step    0 : Gradient = 7.008e-03/7.884e-03 (rms/max) Energy = -78.7924929710
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41388e-01 3.41561e-01 3.41561e-01
+Step    1 : Displace = [0m1.424e-02[0m/[0m1.650e-02[0m (rms/max) Trust = 1.000e-01 (=) Grad_T = [0m8.190e-04[0m/[0m9.391e-04[0m (rms/max) E (change) = -78.7930433271 ([0m-5.504e-04[0m) Quality = [0m0.878[0m
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41504e-01 3.41561e-01 3.81685e-01
+Step    2 : Displace = [0m2.245e-03[0m/[0m2.593e-03[0m (rms/max) Trust = 1.414e-01 ([92m+[0m) Grad_T = [92m1.988e-05[0m/[92m2.155e-05[0m (rms/max) E (change) = -78.7930539721 ([0m-1.065e-05[0m) Quality = [0m0.983[0m
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41504e-01 3.41561e-01 4.12773e-01
+Step    3 : Displace = [92m2.826e-05[0m/[92m3.283e-05[0m (rms/max) Trust = 2.000e-01 ([92m+[0m) Grad_T = [92m4.803e-07[0m/[92m7.572e-07[0m (rms/max) E (change) = -78.7930539759 ([92m-3.753e-09[0m) Quality = [0m0.991[0m
+Hessian Eigenvalues: 2.30000e-02 5.00000e-02 5.00000e-02 ... 3.41504e-01 3.41561e-01 4.12773e-01
+Converged! =D
+
+    #==========================================================================#
+    #| If this code has benefited your research, please support us by citing: |#
+    #|                                                                        |#
+    #| Wang, L.-P.; Song, C.C. (2016) "Geometry optimization made simple with |#
+    #| translation and rotation coordinates", J. Chem, Phys. 144, 214108.     |#
+    #| http://dx.doi.org/10.1063/1.4952956                                    |#
+    #==========================================================================#
+    Time elapsed since start of run_optimizer: 1.015 seconds
+WARN: ECP not specified. The basis set CRENBL include an ECP. Recommended ECP: CRENBL.
+/home/bhabani/Kishore/Tangelo_2.0_hardware/tangelo/problem_decomposition/dmet/dmet_problem_decomposition.py:168: RuntimeWarning: The mean field will be recomputed even if one has been provided by the user.
+  warnings.warn("The mean field will be recomputed even if one has been provided by the user.", RuntimeWarning)
+	[OptimizerCache] Found mu=0.000000 in cache. Skipping hardware calls.
+	[Optimizer] Evaluating mu=-0.050000 with 1 hardware jobs...
+ 	Iteration =  1
+ 	Chemical Potential (mu) =     -0.0500000000
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[1.63042931e-16 2.61974073e-17 2.67656037e-18 1.01363359e-17
+ 8.51926255e-17 1.98381551e-16 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[9.22767409e-16 1.63878696e-16 9.89380147e-17 1.43978187e-17
+ 8.19043410e-18 5.29689913e-17 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -60.738095481128084
+		Number of Electrons in Fragment = 8.956064287095291
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directoryAn NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.LUCJ CCSD init diag: norb=4, n_reps=2, t1_shape=(2, 2), t2_shape=(2, 2, 2, 2), t1_norm=3.080210e-09, t2_norm=2.255324e-02
+[AccountManager] SQD call 1: using account 1 (1/10)
+Pass: Decompose - 1.25265 (ms)Pass: MergeOrbitalRotations - 0.50545 (ms)Pass: UnitarySynthesis - 0.00739 (ms)Pass: HighLevelSynthesis - 2.21658 (ms)Pass: BasisTranslator - 0.10920 (ms)Pass: ElidePermutations - 0.00596 (ms)Pass: RemoveDiagonalGatesBeforeMeasure - 0.00739 (ms)Pass: RemoveIdentityEquivalent - 0.01693 (ms)Pass: InverseCancellation - 0.01478 (ms)Pass: ContractIdleWiresInControlFlow - 0.00238 (ms)Pass: CommutativeCancellation - 0.05984 (ms)Pass: ConsolidateBlocks - 0.24462 (ms)Pass: Split2QUnitaries - 0.00334 (ms)Pass: SetLayout - 0.02551 (ms)Pass: FullAncillaAllocation - 0.20885 (ms)Pass: EnlargeWithAncilla - 0.12159 (ms)Pass: ApplyLayout - 0.42319 (ms)Pass: CheckMap - 0.11921 (ms)Pass: BarrierBeforeFinalMeasurements - 1.34444 (ms)Pass: SabreSwap - 2.60139 (ms)Pass: FilterOpNodes - 0.13947 (ms)Pass: UnitarySynthesis - 0.00763 (ms)Pass: HighLevelSynthesis - 0.02337 (ms)Pass: BasisTranslator - 2.31552 (ms)Pass: Depth - 0.11015 (ms)Pass: Size - 0.00381 (ms)Pass: MinimumPoint - 0.01264 (ms)Pass: ConsolidateBlocks - 0.78487 (ms)Pass: UnitarySynthesis - 2.41876 (ms)Pass: RemoveIdentityEquivalent - 0.03242 (ms)Pass: Optimize1qGatesDecomposition - 0.26274 (ms)Pass: CommutativeCancellation - 0.29397 (ms)Pass: ContractIdleWiresInControlFlow - 0.00286 (ms)Pass: GatesInBasis - 0.06819 (ms)Pass: Depth - 0.05984 (ms)Pass: Size - 0.00238 (ms)Pass: MinimumPoint - 0.07129 (ms)Pass: ConsolidateBlocks - 0.45300 (ms)Pass: UnitarySynthesis - 0.66447 (ms)Pass: RemoveIdentityEquivalent - 0.02646 (ms)Pass: Optimize1qGatesDecomposition - 0.19026 (ms)Pass: CommutativeCancellation - 0.23603 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.06080 (ms)Pass: Depth - 0.05722 (ms)Pass: Size - 0.00191 (ms)Pass: MinimumPoint - 0.08416 (ms)Pass: ConsolidateBlocks - 0.46110 (ms)Pass: UnitarySynthesis - 0.47421 (ms)Pass: RemoveIdentityEquivalent - 0.02337 (ms)Pass: Optimize1qGatesDecomposition - 0.18930 (ms)Pass: CommutativeCancellation - 0.22984 (ms)Pass: ContractIdleWiresInControlFlow - 0.00215 (ms)Pass: GatesInBasis - 0.06270 (ms)Pass: Depth - 0.05507 (ms)Pass: Size - 0.00238 (ms)Pass: MinimumPoint - 0.00501 (ms)Pass: ContainsInstruction - 0.00644 (ms)Pass: InstructionDurationCheck - 0.00381 (ms)SQD counts diag: n_bits=8, first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD postselect diag: total_samples=256, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD postselect diag: total_samples=36, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+		SQD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=4.000000000000002
+		Fragment Energy = -59.91045081138103
+		Number of Electrons in Fragment = 8.67585801487206
+	Electron Residual = -0.3680776980326499
+	[Optimizer] Evaluating mu=0.050000 with 1 hardware jobs...
+ 	Iteration =  2
+ 	Chemical Potential (mu) =      0.0500000000
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[1.63042931e-16 2.61974073e-17 2.67656037e-18 1.01363359e-17
+ 8.51926255e-17 1.98381551e-16 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[9.22767409e-16 1.63878696e-16 9.89380147e-17 1.43978187e-17
+ 8.19043410e-18 5.29689913e-17 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -61.015860032381426
+		Number of Electrons in Fragment = 9.055922535687909
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+LUCJ CCSD init diag: norb=4, n_reps=2, t1_shape=(2, 2), t2_shape=(2, 2, 2, 2), t1_norm=1.282684e-03, t2_norm=2.367616e-02
+[AccountManager] SQD call 2: using account 1 (2/10)
+Pass: Decompose - 1.01352 (ms)Pass: MergeOrbitalRotations - 0.52738 (ms)Pass: UnitarySynthesis - 0.00858 (ms)Pass: HighLevelSynthesis - 2.26760 (ms)Pass: BasisTranslator - 0.10562 (ms)Pass: ElidePermutations - 0.00858 (ms)Pass: RemoveDiagonalGatesBeforeMeasure - 0.00882 (ms)Pass: RemoveIdentityEquivalent - 0.01454 (ms)Pass: InverseCancellation - 0.01669 (ms)Pass: ContractIdleWiresInControlFlow - 0.00167 (ms)Pass: CommutativeCancellation - 0.06509 (ms)Pass: ConsolidateBlocks - 0.28944 (ms)Pass: Split2QUnitaries - 0.00525 (ms)Pass: SetLayout - 0.02217 (ms)Pass: FullAncillaAllocation - 0.20790 (ms)Pass: EnlargeWithAncilla - 0.07749 (ms)Pass: ApplyLayout - 0.40150 (ms)Pass: CheckMap - 0.09727 (ms)Pass: BarrierBeforeFinalMeasurements - 2.25973 (ms)Pass: SabreSwap - 2.24590 (ms)Pass: FilterOpNodes - 0.14830 (ms)Pass: UnitarySynthesis - 0.00691 (ms)Pass: HighLevelSynthesis - 0.02241 (ms)Pass: BasisTranslator - 1.70302 (ms)Pass: Depth - 0.15044 (ms)Pass: Size - 0.00334 (ms)Pass: MinimumPoint - 0.01311 (ms)Pass: ConsolidateBlocks - 0.88263 (ms)Pass: UnitarySynthesis - 2.22111 (ms)Pass: RemoveIdentityEquivalent - 0.04077 (ms)Pass: Optimize1qGatesDecomposition - 0.32258 (ms)Pass: CommutativeCancellation - 0.32568 (ms)Pass: ContractIdleWiresInControlFlow - 0.00262 (ms)Pass: GatesInBasis - 0.08559 (ms)Pass: Depth - 0.07081 (ms)Pass: Size - 0.00262 (ms)Pass: MinimumPoint - 0.07963 (ms)Pass: ConsolidateBlocks - 0.57149 (ms)Pass: UnitarySynthesis - 0.60177 (ms)Pass: RemoveIdentityEquivalent - 0.02956 (ms)Pass: Optimize1qGatesDecomposition - 0.22769 (ms)Pass: CommutativeCancellation - 0.27728 (ms)Pass: ContractIdleWiresInControlFlow - 0.00215 (ms)Pass: GatesInBasis - 0.07653 (ms)Pass: Depth - 0.07153 (ms)Pass: Size - 0.00215 (ms)Pass: MinimumPoint - 0.09751 (ms)Pass: ConsolidateBlocks - 0.54741 (ms)Pass: UnitarySynthesis - 0.58293 (ms)Pass: RemoveIdentityEquivalent - 0.03195 (ms)Pass: Optimize1qGatesDecomposition - 0.23365 (ms)Pass: CommutativeCancellation - 0.27394 (ms)Pass: ContractIdleWiresInControlFlow - 0.00215 (ms)Pass: GatesInBasis - 0.08059 (ms)Pass: Depth - 0.06652 (ms)Pass: Size - 0.00238 (ms)Pass: MinimumPoint - 0.00429 (ms)Pass: ConsolidateBlocks - 0.54169 (ms)Pass: UnitarySynthesis - 0.57983 (ms)Pass: RemoveIdentityEquivalent - 0.02956 (ms)Pass: Optimize1qGatesDecomposition - 0.23103 (ms)Pass: CommutativeCancellation - 0.28086 (ms)Pass: ContractIdleWiresInControlFlow - 0.00215 (ms)Pass: GatesInBasis - 0.07892 (ms)Pass: Depth - 0.06604 (ms)Pass: Size - 0.00191 (ms)Pass: MinimumPoint - 0.00572 (ms)Pass: ContainsInstruction - 0.00739 (ms)Pass: InstructionDurationCheck - 0.00381 (ms)SQD counts diag: n_bits=8, first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD postselect diag: total_samples=256, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD postselect diag: total_samples=36, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+		SQD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=4.000000000000002
+		Fragment Energy = -61.270980866492565
+		Number of Electrons in Fragment = 9.286329263814523
+	Electron Residual = 0.34225179950243145
+[Optimizer] Bracket found: (-0.05, 0.0). Starting Brent search...
+	[OptimizerCache] Found mu=-0.050000 in cache. Skipping hardware calls.
+	[OptimizerCache] Found mu=0.000000 in cache. Skipping hardware calls.
+	[Optimizer] Evaluating mu=-0.004892 with 1 hardware jobs...
+ 	Iteration =  3
+ 	Chemical Potential (mu) =     -0.0048923904
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[1.63042931e-16 2.61974073e-17 2.67656037e-18 1.01363359e-17
+ 8.51926255e-17 1.98381551e-16 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[9.22767409e-16 1.63878696e-16 9.89380147e-17 1.43978187e-17
+ 8.19043410e-18 5.29689913e-17 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -60.863903708358876
+		Number of Electrons in Fragment = 9.00104833239682
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+LUCJ CCSD init diag: norb=4, n_reps=2, t1_shape=(2, 2), t2_shape=(2, 2, 2, 2), t1_norm=2.919933e-08, t2_norm=2.224524e-02
+[AccountManager] SQD call 3: using account 1 (3/10)
+Pass: Decompose - 0.80276 (ms)Pass: MergeOrbitalRotations - 0.47159 (ms)Pass: UnitarySynthesis - 0.00596 (ms)Pass: HighLevelSynthesis - 2.09498 (ms)Pass: BasisTranslator - 0.09418 (ms)Pass: ElidePermutations - 0.00548 (ms)Pass: RemoveDiagonalGatesBeforeMeasure - 0.00691 (ms)Pass: RemoveIdentityEquivalent - 0.01645 (ms)Pass: InverseCancellation - 0.01383 (ms)Pass: ContractIdleWiresInControlFlow - 0.00215 (ms)Pass: CommutativeCancellation - 0.05579 (ms)Pass: ConsolidateBlocks - 0.25487 (ms)Pass: Split2QUnitaries - 0.00286 (ms)Pass: SetLayout - 0.01669 (ms)Pass: FullAncillaAllocation - 0.20027 (ms)Pass: EnlargeWithAncilla - 0.08249 (ms)Pass: ApplyLayout - 0.39887 (ms)Pass: CheckMap - 0.09203 (ms)Pass: BarrierBeforeFinalMeasurements - 2.86651 (ms)Pass: SabreSwap - 1.86992 (ms)Pass: FilterOpNodes - 0.11921 (ms)Pass: UnitarySynthesis - 0.00596 (ms)Pass: HighLevelSynthesis - 0.02027 (ms)Pass: BasisTranslator - 1.96505 (ms)Pass: Depth - 0.11063 (ms)Pass: Size - 0.00286 (ms)Pass: MinimumPoint - 0.00930 (ms)Pass: ConsolidateBlocks - 0.76938 (ms)Pass: UnitarySynthesis - 2.09332 (ms)Pass: RemoveIdentityEquivalent - 0.03171 (ms)Pass: Optimize1qGatesDecomposition - 0.26369 (ms)Pass: CommutativeCancellation - 0.28634 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.06795 (ms)Pass: Depth - 0.06199 (ms)Pass: Size - 0.00215 (ms)Pass: MinimumPoint - 0.06747 (ms)Pass: ConsolidateBlocks - 0.46015 (ms)Pass: UnitarySynthesis - 0.45896 (ms)Pass: RemoveIdentityEquivalent - 0.02623 (ms)Pass: Optimize1qGatesDecomposition - 0.18525 (ms)Pass: CommutativeCancellation - 0.28872 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.06342 (ms)Pass: Depth - 0.06247 (ms)Pass: Size - 0.00215 (ms)Pass: MinimumPoint - 0.08583 (ms)Pass: ConsolidateBlocks - 0.48018 (ms)Pass: UnitarySynthesis - 0.44847 (ms)Pass: RemoveIdentityEquivalent - 0.02480 (ms)Pass: Optimize1qGatesDecomposition - 0.20003 (ms)Pass: CommutativeCancellation - 0.25225 (ms)Pass: ContractIdleWiresInControlFlow - 0.00167 (ms)Pass: GatesInBasis - 0.06294 (ms)Pass: Depth - 0.05794 (ms)Pass: Size - 0.00215 (ms)Pass: MinimumPoint - 0.00405 (ms)Pass: ContainsInstruction - 0.00572 (ms)Pass: InstructionDurationCheck - 0.00334 (ms)SQD counts diag: n_bits=8, first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD postselect diag: total_samples=256, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD postselect diag: total_samples=36, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+		SQD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=4.000000000000002
+		Fragment Energy = -60.43716789536022
+		Number of Electrons in Fragment = 8.907842899690552
+	Electron Residual = -0.09110876791262967
+	[Optimizer] Evaluating mu=-0.001491 with 1 hardware jobs...
+ 	Iteration =  4
+ 	Chemical Potential (mu) =     -0.0014905930
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[1.63042931e-16 2.61974073e-17 2.67656037e-18 1.01363359e-17
+ 8.51926255e-17 1.98381551e-16 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[9.22767409e-16 1.63878696e-16 9.89380147e-17 1.43978187e-17
+ 8.19043410e-18 5.29689913e-17 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -60.873359540959285
+		Number of Electrons in Fragment = 9.004445291581716
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+LUCJ CCSD init diag: norb=4, n_reps=2, t1_shape=(2, 2), t2_shape=(2, 2, 2, 2), t1_norm=3.087765e-07, t2_norm=2.227224e-02
+[AccountManager] SQD call 4: using account 1 (4/10)
+Pass: Decompose - 0.85950 (ms)Pass: MergeOrbitalRotations - 0.48804 (ms)Pass: UnitarySynthesis - 0.00668 (ms)Pass: HighLevelSynthesis - 2.12812 (ms)Pass: BasisTranslator - 0.10633 (ms)Pass: ElidePermutations - 0.01001 (ms)Pass: RemoveDiagonalGatesBeforeMeasure - 0.00906 (ms)Pass: RemoveIdentityEquivalent - 0.01764 (ms)Pass: InverseCancellation - 0.01860 (ms)Pass: ContractIdleWiresInControlFlow - 0.00238 (ms)Pass: CommutativeCancellation - 0.05722 (ms)Pass: ConsolidateBlocks - 0.28062 (ms)Pass: Split2QUnitaries - 0.00477 (ms)Pass: SetLayout - 0.02480 (ms)Pass: FullAncillaAllocation - 0.20313 (ms)Pass: EnlargeWithAncilla - 0.08011 (ms)Pass: ApplyLayout - 0.40674 (ms)Pass: CheckMap - 0.09537 (ms)Pass: BarrierBeforeFinalMeasurements - 2.17628 (ms)Pass: SabreSwap - 4.89569 (ms)Pass: FilterOpNodes - 0.39148 (ms)Pass: UnitarySynthesis - 0.01860 (ms)Pass: HighLevelSynthesis - 0.08059 (ms)Pass: BasisTranslator - 8.39305 (ms)Pass: Depth - 0.17738 (ms)Pass: Size - 0.00477 (ms)Pass: MinimumPoint - 0.03123 (ms)Pass: ConsolidateBlocks - 0.98133 (ms)Pass: UnitarySynthesis - 2.39491 (ms)Pass: RemoveIdentityEquivalent - 0.04435 (ms)Pass: Optimize1qGatesDecomposition - 0.35405 (ms)Pass: CommutativeCancellation - 0.34928 (ms)Pass: ContractIdleWiresInControlFlow - 0.00310 (ms)Pass: GatesInBasis - 0.09847 (ms)Pass: Depth - 0.07153 (ms)Pass: Size - 0.00262 (ms)Pass: MinimumPoint - 0.09942 (ms)Pass: ConsolidateBlocks - 0.66662 (ms)Pass: UnitarySynthesis - 0.67186 (ms)Pass: RemoveIdentityEquivalent - 0.03171 (ms)Pass: Optimize1qGatesDecomposition - 0.22912 (ms)Pass: CommutativeCancellation - 0.30327 (ms)Pass: ContractIdleWiresInControlFlow - 0.00215 (ms)Pass: GatesInBasis - 0.07367 (ms)Pass: Depth - 0.07176 (ms)Pass: Size - 0.00262 (ms)Pass: MinimumPoint - 0.11468 (ms)Pass: ConsolidateBlocks - 0.54312 (ms)Pass: UnitarySynthesis - 0.57101 (ms)Pass: RemoveIdentityEquivalent - 0.02813 (ms)Pass: Optimize1qGatesDecomposition - 0.22888 (ms)Pass: CommutativeCancellation - 0.29206 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.06890 (ms)Pass: Depth - 0.05794 (ms)Pass: Size - 0.00238 (ms)Pass: MinimumPoint - 0.00548 (ms)Pass: ContainsInstruction - 0.00811 (ms)Pass: InstructionDurationCheck - 0.00548 (ms)SQD counts diag: n_bits=8, first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD postselect diag: total_samples=256, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD postselect diag: total_samples=36, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+		SQD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=4.000000000000002
+		Fragment Energy = -60.47997696899904
+		Number of Electrons in Fragment = 8.927296247507291
+	Electron Residual = -0.06825846091099308
+	[Optimizer] Evaluating mu=-0.000550 with 1 hardware jobs...
+ 	Iteration =  5
+ 	Chemical Potential (mu) =     -0.0005500746
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[1.63042931e-16 2.61974073e-17 2.67656037e-18 1.01363359e-17
+ 8.51926255e-17 1.98381551e-16 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[9.22767409e-16 1.63878696e-16 9.89380147e-17 1.43978187e-17
+ 8.19043410e-18 5.29689913e-17 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -60.87597301484802
+		Number of Electrons in Fragment = 9.005384569566544
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+LUCJ CCSD init diag: norb=4, n_reps=2, t1_shape=(2, 2), t2_shape=(2, 2, 2, 2), t1_norm=1.464060e-03, t2_norm=3.115437e-02
+[AccountManager] SQD call 5: using account 1 (5/10)
+Pass: Decompose - 0.87929 (ms)Pass: MergeOrbitalRotations - 0.48041 (ms)Pass: UnitarySynthesis - 0.00644 (ms)Pass: HighLevelSynthesis - 2.17366 (ms)Pass: BasisTranslator - 0.13471 (ms)Pass: ElidePermutations - 0.00548 (ms)Pass: RemoveDiagonalGatesBeforeMeasure - 0.00644 (ms)Pass: RemoveIdentityEquivalent - 0.01383 (ms)Pass: InverseCancellation - 0.01693 (ms)Pass: ContractIdleWiresInControlFlow - 0.00238 (ms)Pass: CommutativeCancellation - 0.07010 (ms)Pass: ConsolidateBlocks - 0.32043 (ms)Pass: Split2QUnitaries - 0.00286 (ms)Pass: SetLayout - 0.01669 (ms)Pass: FullAncillaAllocation - 0.20409 (ms)Pass: EnlargeWithAncilla - 0.09465 (ms)Pass: ApplyLayout - 0.41223 (ms)Pass: CheckMap - 0.10276 (ms)Pass: BarrierBeforeFinalMeasurements - 1.64986 (ms)Pass: SabreSwap - 3.33977 (ms)Pass: FilterOpNodes - 0.38385 (ms)Pass: UnitarySynthesis - 0.01693 (ms)Pass: HighLevelSynthesis - 0.06318 (ms)Pass: BasisTranslator - 5.95617 (ms)Pass: Depth - 0.31495 (ms)Pass: Size - 0.00668 (ms)Pass: MinimumPoint - 0.01907 (ms)Pass: ConsolidateBlocks - 2.27499 (ms)Pass: UnitarySynthesis - 3.93081 (ms)Pass: RemoveIdentityEquivalent - 0.04506 (ms)Pass: Optimize1qGatesDecomposition - 0.32473 (ms)Pass: CommutativeCancellation - 0.38171 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.09346 (ms)Pass: Depth - 0.07248 (ms)Pass: Size - 0.00262 (ms)Pass: MinimumPoint - 0.15903 (ms)Pass: ConsolidateBlocks - 0.68331 (ms)Pass: UnitarySynthesis - 0.69284 (ms)Pass: RemoveIdentityEquivalent - 0.03743 (ms)Pass: Optimize1qGatesDecomposition - 0.23746 (ms)Pass: CommutativeCancellation - 0.31877 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.06819 (ms)Pass: Depth - 0.07820 (ms)Pass: Size - 0.00238 (ms)Pass: MinimumPoint - 0.00548 (ms)Pass: ConsolidateBlocks - 0.53096 (ms)Pass: UnitarySynthesis - 0.49043 (ms)Pass: RemoveIdentityEquivalent - 0.03266 (ms)Pass: Optimize1qGatesDecomposition - 0.25606 (ms)Pass: CommutativeCancellation - 0.33283 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.07129 (ms)Pass: Depth - 0.07796 (ms)Pass: Size - 0.00262 (ms)Pass: MinimumPoint - 0.00381 (ms)Pass: ConsolidateBlocks - 0.55695 (ms)Pass: UnitarySynthesis - 0.49567 (ms)Pass: RemoveIdentityEquivalent - 0.03171 (ms)Pass: Optimize1qGatesDecomposition - 0.22578 (ms)Pass: CommutativeCancellation - 0.30684 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.06652 (ms)Pass: Depth - 0.07749 (ms)Pass: Size - 0.00215 (ms)Pass: MinimumPoint - 0.00358 (ms)Pass: ConsolidateBlocks - 0.53024 (ms)Pass: UnitarySynthesis - 0.54097 (ms)Pass: RemoveIdentityEquivalent - 0.03433 (ms)Pass: Optimize1qGatesDecomposition - 0.23413 (ms)Pass: CommutativeCancellation - 0.32997 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.07463 (ms)Pass: Depth - 0.06890 (ms)Pass: Size - 0.00215 (ms)Pass: MinimumPoint - 0.00620 (ms)Pass: ContainsInstruction - 0.00644 (ms)Pass: InstructionDurationCheck - 0.00286 (ms)SQD counts diag: n_bits=8, first_bitstring=[0, 0, 1, 1, 0, 0, 1, 0], hamming_left=2, hamming_right=1
+SQD postselect diag: total_samples=256, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD postselect diag: total_samples=36, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+		SQD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=4.000000000000002
+		Fragment Energy = -60.713358895663866
+		Number of Electrons in Fragment = 9.030833028474
+	Electron Residual = 0.03621759804054392
+	[Optimizer] Evaluating mu=-0.001020 with 1 hardware jobs...
+ 	Iteration =  6
+ 	Chemical Potential (mu) =     -0.0010203338
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[1.63042931e-16 2.61974073e-17 2.67656037e-18 1.01363359e-17
+ 8.51926255e-17 1.98381551e-16 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[9.22767409e-16 1.63878696e-16 9.89380147e-17 1.43978187e-17
+ 8.19043410e-18 5.29689913e-17 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -60.87466632294854
+		Number of Electrons in Fragment = 9.004914925805043
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+LUCJ CCSD init diag: norb=4, n_reps=2, t1_shape=(2, 2), t2_shape=(2, 2, 2, 2), t1_norm=1.467542e-03, t2_norm=3.122278e-02
+[AccountManager] SQD call 6: using account 1 (6/10)
+Pass: Decompose - 0.87142 (ms)Pass: MergeOrbitalRotations - 0.49400 (ms)Pass: UnitarySynthesis - 0.00620 (ms)Pass: HighLevelSynthesis - 2.16126 (ms)Pass: BasisTranslator - 0.10324 (ms)Pass: ElidePermutations - 0.01001 (ms)Pass: RemoveDiagonalGatesBeforeMeasure - 0.00906 (ms)Pass: RemoveIdentityEquivalent - 0.01454 (ms)Pass: InverseCancellation - 0.01907 (ms)Pass: ContractIdleWiresInControlFlow - 0.00238 (ms)Pass: CommutativeCancellation - 0.07272 (ms)Pass: ConsolidateBlocks - 0.31972 (ms)Pass: Split2QUnitaries - 0.00405 (ms)Pass: SetLayout - 0.02503 (ms)Pass: FullAncillaAllocation - 0.19908 (ms)Pass: EnlargeWithAncilla - 0.08512 (ms)Pass: ApplyLayout - 0.41103 (ms)Pass: CheckMap - 0.09871 (ms)Pass: BarrierBeforeFinalMeasurements - 1.88160 (ms)Pass: SabreSwap - 2.81334 (ms)Pass: FilterOpNodes - 0.39697 (ms)Pass: UnitarySynthesis - 0.01812 (ms)Pass: HighLevelSynthesis - 0.07892 (ms)Pass: BasisTranslator - 6.93393 (ms)Pass: Depth - 0.22769 (ms)Pass: Size - 0.00453 (ms)Pass: MinimumPoint - 0.03052 (ms)Pass: ConsolidateBlocks - 1.50514 (ms)Pass: UnitarySynthesis - 3.70598 (ms)Pass: RemoveIdentityEquivalent - 0.06795 (ms)Pass: Optimize1qGatesDecomposition - 0.54717 (ms)Pass: CommutativeCancellation - 0.54765 (ms)Pass: ContractIdleWiresInControlFlow - 0.00334 (ms)Pass: GatesInBasis - 0.15569 (ms)Pass: Depth - 0.11396 (ms)Pass: Size - 0.00358 (ms)Pass: MinimumPoint - 0.12469 (ms)Pass: ConsolidateBlocks - 0.81038 (ms)Pass: UnitarySynthesis - 0.68998 (ms)Pass: RemoveIdentityEquivalent - 0.03743 (ms)Pass: Optimize1qGatesDecomposition - 0.23746 (ms)Pass: CommutativeCancellation - 0.29540 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.08726 (ms)Pass: Depth - 0.06413 (ms)Pass: Size - 0.00191 (ms)Pass: MinimumPoint - 0.00381 (ms)Pass: ConsolidateBlocks - 0.56028 (ms)Pass: UnitarySynthesis - 0.60582 (ms)Pass: RemoveIdentityEquivalent - 0.03409 (ms)Pass: Optimize1qGatesDecomposition - 0.23413 (ms)Pass: CommutativeCancellation - 0.33426 (ms)Pass: ContractIdleWiresInControlFlow - 0.00238 (ms)Pass: GatesInBasis - 0.08917 (ms)Pass: Depth - 0.06890 (ms)Pass: Size - 0.00215 (ms)Pass: MinimumPoint - 0.00405 (ms)Pass: ConsolidateBlocks - 0.59319 (ms)Pass: UnitarySynthesis - 0.60892 (ms)Pass: RemoveIdentityEquivalent - 0.03839 (ms)Pass: Optimize1qGatesDecomposition - 0.24509 (ms)Pass: CommutativeCancellation - 0.31757 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.07915 (ms)Pass: Depth - 0.06866 (ms)Pass: Size - 0.00215 (ms)Pass: MinimumPoint - 0.00381 (ms)Pass: ConsolidateBlocks - 0.59199 (ms)Pass: UnitarySynthesis - 0.49806 (ms)Pass: RemoveIdentityEquivalent - 0.03457 (ms)Pass: Optimize1qGatesDecomposition - 0.24056 (ms)Pass: CommutativeCancellation - 0.30971 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.07653 (ms)Pass: Depth - 0.06866 (ms)Pass: Size - 0.00215 (ms)Pass: MinimumPoint - 0.00644 (ms)Pass: ContainsInstruction - 0.00668 (ms)Pass: InstructionDurationCheck - 0.00310 (ms)SQD counts diag: n_bits=8, first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD postselect diag: total_samples=256, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD postselect diag: total_samples=36, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+		SQD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=4.000000000000002
+		Fragment Energy = -60.707717481360866
+		Number of Electrons in Fragment = 9.028237553238613
+	Electron Residual = 0.03315247904365748
+	[Optimizer] Evaluating mu=-0.001255 with 1 hardware jobs...
+ 	Iteration =  7
+ 	Chemical Potential (mu) =     -0.0012554634
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[1.63042931e-16 2.61974073e-17 2.67656037e-18 1.01363359e-17
+ 8.51926255e-17 1.98381551e-16 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[9.22767409e-16 1.63878696e-16 9.89380147e-17 1.43978187e-17
+ 8.19043410e-18 5.29689913e-17 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -60.874012943498805
+		Number of Electrons in Fragment = 9.004680107368204
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+LUCJ CCSD init diag: norb=4, n_reps=2, t1_shape=(2, 2), t2_shape=(2, 2, 2, 2), t1_norm=9.502843e-07, t2_norm=2.227441e-02
+[AccountManager] SQD call 7: using account 1 (7/10)
+Pass: Decompose - 0.85425 (ms)Pass: MergeOrbitalRotations - 0.48184 (ms)Pass: UnitarySynthesis - 0.00620 (ms)Pass: HighLevelSynthesis - 2.11954 (ms)Pass: BasisTranslator - 0.10014 (ms)Pass: ElidePermutations - 0.01001 (ms)Pass: RemoveDiagonalGatesBeforeMeasure - 0.00811 (ms)Pass: RemoveIdentityEquivalent - 0.01717 (ms)Pass: InverseCancellation - 0.01836 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: CommutativeCancellation - 0.06032 (ms)Pass: ConsolidateBlocks - 0.26727 (ms)Pass: Split2QUnitaries - 0.00405 (ms)Pass: SetLayout - 0.02551 (ms)Pass: FullAncillaAllocation - 0.20123 (ms)Pass: EnlargeWithAncilla - 0.11277 (ms)Pass: ApplyLayout - 0.40603 (ms)Pass: CheckMap - 0.09751 (ms)Pass: BarrierBeforeFinalMeasurements - 1.82652 (ms)Pass: SabreSwap - 1.90926 (ms)Pass: FilterOpNodes - 0.20766 (ms)Pass: UnitarySynthesis - 0.00978 (ms)Pass: HighLevelSynthesis - 0.03362 (ms)Pass: BasisTranslator - 3.48020 (ms)Pass: Depth - 0.21338 (ms)Pass: Size - 0.00548 (ms)Pass: MinimumPoint - 0.02551 (ms)Pass: ConsolidateBlocks - 1.49131 (ms)Pass: UnitarySynthesis - 3.77536 (ms)Pass: RemoveIdentityEquivalent - 0.03242 (ms)Pass: Optimize1qGatesDecomposition - 0.26488 (ms)Pass: CommutativeCancellation - 0.29063 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.06938 (ms)Pass: Depth - 0.05841 (ms)Pass: Size - 0.00215 (ms)Pass: MinimumPoint - 0.06962 (ms)Pass: ConsolidateBlocks - 0.46277 (ms)Pass: UnitarySynthesis - 0.44346 (ms)Pass: RemoveIdentityEquivalent - 0.02503 (ms)Pass: Optimize1qGatesDecomposition - 0.18501 (ms)Pass: CommutativeCancellation - 0.23580 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.06008 (ms)Pass: Depth - 0.05817 (ms)Pass: Size - 0.00238 (ms)Pass: MinimumPoint - 0.08583 (ms)Pass: ConsolidateBlocks - 0.44608 (ms)Pass: UnitarySynthesis - 0.45466 (ms)Pass: RemoveIdentityEquivalent - 0.02456 (ms)Pass: Optimize1qGatesDecomposition - 0.19288 (ms)Pass: CommutativeCancellation - 0.22793 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: GatesInBasis - 0.06175 (ms)Pass: Depth - 0.05698 (ms)Pass: Size - 0.00215 (ms)Pass: MinimumPoint - 0.00453 (ms)Pass: ContainsInstruction - 0.00572 (ms)Pass: InstructionDurationCheck - 0.00334 (ms)SQD counts diag: n_bits=8, first_bitstring=[0, 0, 0, 1, 0, 0, 1, 1], hamming_left=1, hamming_right=2
+SQD postselect diag: total_samples=256, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[1, 0, 0, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD postselect diag: total_samples=36, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+		SQD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=4.000000000000002
+		Fragment Energy = -60.48291992164535
+		Number of Electrons in Fragment = 8.928660059385868
+	Electron Residual = -0.06665983324592872
+	[Optimizer] Evaluating mu=-0.001098 with 1 hardware jobs...
+ 	Iteration =  8
+ 	Chemical Potential (mu) =     -0.0010984316
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[1.63042931e-16 2.61974073e-17 2.67656037e-18 1.01363359e-17
+ 8.51926255e-17 1.98381551e-16 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[9.22767409e-16 1.63878696e-16 9.89380147e-17 1.43978187e-17
+ 8.19043410e-18 5.29689913e-17 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -60.87444930670989
+		Number of Electrons in Fragment = 9.004836930994893
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+LUCJ CCSD init diag: norb=4, n_reps=2, t1_shape=(2, 2), t2_shape=(2, 2, 2, 2), t1_norm=1.472947e-03, t2_norm=3.124381e-02
+[AccountManager] SQD call 8: using account 1 (8/10)
+Pass: Decompose - 0.83351 (ms)Pass: MergeOrbitalRotations - 0.48590 (ms)Pass: UnitarySynthesis - 0.00620 (ms)Pass: HighLevelSynthesis - 2.14982 (ms)Pass: BasisTranslator - 0.09775 (ms)Pass: ElidePermutations - 0.00525 (ms)Pass: RemoveDiagonalGatesBeforeMeasure - 0.00691 (ms)Pass: RemoveIdentityEquivalent - 0.01287 (ms)Pass: InverseCancellation - 0.01812 (ms)Pass: ContractIdleWiresInControlFlow - 0.00215 (ms)Pass: CommutativeCancellation - 0.07176 (ms)Pass: ConsolidateBlocks - 0.33951 (ms)Pass: Split2QUnitaries - 0.00310 (ms)Pass: SetLayout - 0.02050 (ms)Pass: FullAncillaAllocation - 0.19956 (ms)Pass: EnlargeWithAncilla - 0.08154 (ms)Pass: ApplyLayout - 0.41246 (ms)Pass: CheckMap - 0.09346 (ms)Pass: BarrierBeforeFinalMeasurements - 1.45626 (ms)Pass: SabreSwap - 3.87073 (ms)Pass: FilterOpNodes - 0.39101 (ms)Pass: UnitarySynthesis - 0.01740 (ms)Pass: HighLevelSynthesis - 0.05865 (ms)Pass: BasisTranslator - 6.82044 (ms)Pass: Depth - 0.41318 (ms)Pass: Size - 0.00882 (ms)Pass: MinimumPoint - 0.02456 (ms)Pass: ConsolidateBlocks - 1.65987 (ms)Pass: UnitarySynthesis - 2.45810 (ms)Pass: RemoveIdentityEquivalent - 0.05245 (ms)Pass: Optimize1qGatesDecomposition - 0.36979 (ms)Pass: CommutativeCancellation - 0.43058 (ms)Pass: ContractIdleWiresInControlFlow - 0.00286 (ms)Pass: GatesInBasis - 0.10562 (ms)Pass: Depth - 0.09680 (ms)Pass: Size - 0.00262 (ms)Pass: MinimumPoint - 0.11039 (ms)Pass: ConsolidateBlocks - 0.79608 (ms)Pass: UnitarySynthesis - 0.75054 (ms)Pass: RemoveIdentityEquivalent - 0.03910 (ms)Pass: Optimize1qGatesDecomposition - 0.28634 (ms)Pass: CommutativeCancellation - 0.36407 (ms)Pass: ContractIdleWiresInControlFlow - 0.00238 (ms)Pass: GatesInBasis - 0.09871 (ms)Pass: Depth - 0.09179 (ms)Pass: Size - 0.00286 (ms)Pass: MinimumPoint - 0.00453 (ms)Pass: ConsolidateBlocks - 0.65112 (ms)Pass: UnitarySynthesis - 0.67854 (ms)Pass: RemoveIdentityEquivalent - 0.03958 (ms)Pass: Optimize1qGatesDecomposition - 0.28205 (ms)Pass: CommutativeCancellation - 0.37384 (ms)Pass: ContractIdleWiresInControlFlow - 0.00262 (ms)Pass: GatesInBasis - 0.09751 (ms)Pass: Depth - 0.11706 (ms)Pass: Size - 0.00238 (ms)Pass: MinimumPoint - 0.00405 (ms)Pass: ConsolidateBlocks - 0.60654 (ms)Pass: UnitarySynthesis - 0.60844 (ms)Pass: RemoveIdentityEquivalent - 0.03219 (ms)Pass: Optimize1qGatesDecomposition - 0.23508 (ms)Pass: CommutativeCancellation - 0.29635 (ms)Pass: ContractIdleWiresInControlFlow - 0.00238 (ms)Pass: GatesInBasis - 0.07915 (ms)Pass: Depth - 0.07439 (ms)Pass: Size - 0.00191 (ms)Pass: MinimumPoint - 0.00358 (ms)Pass: ConsolidateBlocks - 0.54169 (ms)Pass: UnitarySynthesis - 0.46611 (ms)Pass: RemoveIdentityEquivalent - 0.03409 (ms)Pass: Optimize1qGatesDecomposition - 0.23293 (ms)Pass: CommutativeCancellation - 0.31972 (ms)Pass: ContractIdleWiresInControlFlow - 0.00215 (ms)Pass: GatesInBasis - 0.08392 (ms)Pass: Depth - 0.08106 (ms)Pass: Size - 0.00238 (ms)Pass: MinimumPoint - 0.00453 (ms)Pass: ContainsInstruction - 0.00644 (ms)Pass: InstructionDurationCheck - 0.00334 (ms)SQD counts diag: n_bits=8, first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD postselect diag: total_samples=256, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD postselect diag: total_samples=36, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 0, 0, 1, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+		SQD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=4.000000000000002
+		Fragment Energy = -60.70711068226662
+		Number of Electrons in Fragment = 9.028003261521794
+	Electron Residual = 0.03284019251668724
+	[Optimizer] Evaluating mu=-0.001177 with 1 hardware jobs...
+ 	Iteration =  9
+ 	Chemical Potential (mu) =     -0.0011769475
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[1.63042931e-16 2.61974073e-17 2.67656037e-18 1.01363359e-17
+ 8.51926255e-17 1.98381551e-16 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[9.22767409e-16 1.63878696e-16 9.89380147e-17 1.43978187e-17
+ 8.19043410e-18 5.29689913e-17 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -60.8742311263656
+		Number of Electrons in Fragment = 9.004758519035555
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+LUCJ CCSD init diag: norb=4, n_reps=2, t1_shape=(2, 2), t2_shape=(2, 2, 2, 2), t1_norm=3.115654e-06, t2_norm=2.227535e-02
+[AccountManager] SQD call 9: using account 1 (9/10)
+Pass: Decompose - 0.87738 (ms)Pass: MergeOrbitalRotations - 0.48685 (ms)Pass: UnitarySynthesis - 0.00644 (ms)Pass: HighLevelSynthesis - 2.16913 (ms)Pass: BasisTranslator - 0.10061 (ms)Pass: ElidePermutations - 0.01025 (ms)Pass: RemoveDiagonalGatesBeforeMeasure - 0.00882 (ms)Pass: RemoveIdentityEquivalent - 0.01788 (ms)Pass: InverseCancellation - 0.01955 (ms)Pass: ContractIdleWiresInControlFlow - 0.00191 (ms)Pass: CommutativeCancellation - 0.06413 (ms)Pass: ConsolidateBlocks - 0.27013 (ms)Pass: Split2QUnitaries - 0.00429 (ms)Pass: SetLayout - 0.02527 (ms)Pass: FullAncillaAllocation - 0.20123 (ms)Pass: EnlargeWithAncilla - 0.07963 (ms)Pass: ApplyLayout - 0.40817 (ms)Pass: CheckMap - 0.09942 (ms)Pass: BarrierBeforeFinalMeasurements - 2.08783 (ms)Pass: SabreSwap - 5.18584 (ms)Pass: FilterOpNodes - 0.39291 (ms)Pass: UnitarySynthesis - 0.01955 (ms)Pass: HighLevelSynthesis - 0.06437 (ms)Pass: BasisTranslator - 7.20453 (ms)Pass: Depth - 0.39220 (ms)Pass: Size - 0.00978 (ms)Pass: MinimumPoint - 0.05865 (ms)Pass: ConsolidateBlocks - 1.12772 (ms)Pass: UnitarySynthesis - 2.48027 (ms)Pass: RemoveIdentityEquivalent - 0.05698 (ms)Pass: Optimize1qGatesDecomposition - 0.34761 (ms)Pass: CommutativeCancellation - 0.43988 (ms)Pass: ContractIdleWiresInControlFlow - 0.00310 (ms)Pass: GatesInBasis - 0.09298 (ms)Pass: Depth - 0.08178 (ms)Pass: Size - 0.00262 (ms)Pass: MinimumPoint - 0.09871 (ms)Pass: ConsolidateBlocks - 0.56386 (ms)Pass: UnitarySynthesis - 0.69332 (ms)Pass: RemoveIdentityEquivalent - 0.04601 (ms)Pass: Optimize1qGatesDecomposition - 0.24629 (ms)Pass: CommutativeCancellation - 0.36764 (ms)Pass: ContractIdleWiresInControlFlow - 0.00310 (ms)Pass: GatesInBasis - 0.07725 (ms)Pass: Depth - 0.07892 (ms)Pass: Size - 0.00262 (ms)Pass: MinimumPoint - 0.12708 (ms)Pass: ConsolidateBlocks - 0.52786 (ms)Pass: UnitarySynthesis - 0.57006 (ms)Pass: RemoveIdentityEquivalent - 0.03147 (ms)Pass: Optimize1qGatesDecomposition - 0.23985 (ms)Pass: CommutativeCancellation - 0.33092 (ms)Pass: ContractIdleWiresInControlFlow - 0.00238 (ms)Pass: GatesInBasis - 0.07629 (ms)Pass: Depth - 0.07439 (ms)Pass: Size - 0.00262 (ms)Pass: MinimumPoint - 0.00691 (ms)Pass: ContainsInstruction - 0.00787 (ms)Pass: InstructionDurationCheck - 0.00596 (ms)SQD counts diag: n_bits=8, first_bitstring=[0, 0, 1, 1, 1, 0, 0, 1], hamming_left=2, hamming_right=2
+SQD postselect diag: total_samples=256, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 1, 0, 0, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD postselect diag: total_samples=36, total_postselected=576, batch_sizes=[36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36]
+SQD batch diag: batch0_shape=(36, 8), first_bitstring=[0, 0, 1, 1, 1, 0, 0, 1], hamming_left=2, hamming_right=2
+SQD sci diag: batch=0, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=1, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=2, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=3, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=4, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=5, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=6, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=7, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=8, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=9, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=10, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=11, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=12, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=13, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=14, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+SQD sci diag: batch=15, norb=4, nelec=(2, 2), amp_norm=1.0000000000000002, trace(rdm1)=4.000000000000002
+		SQD diag: n_active_mos=4, n_active_electrons=4, trace(onerdm)=4.000000000000002
+		Fragment Energy = -60.48385125843021
+		Number of Electrons in Fragment = 8.92916971346447
+	Electron Residual = -0.06607176749997734
+	[Optimizer] Evaluating mu=-0.001125 with 1 hardware jobs...
+ 	Iteration =  10
+ 	Chemical Potential (mu) =     -0.0011245000
+ 	----------------
+ 
+	SCF Occupancy Eigenvalues for Fragment Number : # 0
+	[1.63042931e-16 2.61974073e-17 2.67656037e-18 1.01363359e-17
+ 8.51926255e-17 1.98381551e-16 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+	SCF Occupancy Eigenvalues for Fragment Number : # 1
+	[9.22767409e-16 1.63878696e-16 9.89380147e-17 1.43978187e-17
+ 8.19043410e-18 5.29689913e-17 5.22803903e-06 1.68973454e-03
+ 9.50618111e-03 9.50619376e-03 1.00000000e+00 1.99049381e+00
+ 1.99049382e+00 1.99831027e+00 1.99999477e+00]
+
+		Fragment Number : #  1
+		------------------------
+		CCSD diag: n_active_mos=24, n_active_electrons=18, trace(onerdm)=18.0
+		Fragment Energy = -60.874376867972614
+		Number of Electrons in Fragment = 9.004810897063589
+Fragment: n_homo=8, n_lumo=9, kept=[7, 8, 9, 10]
+		Fragment Number : #  2
+		------------------------
+LUCJ CCSD init diag: norb=4, n_reps=2, t1_shape=(2, 2), t2_shape=(2, 2, 2, 2), t1_norm=1.485078e-03, t2_norm=3.127097e-02
+[AccountManager] SQD call 10: using account 1 (10/10)
+Pass: Decompose - 0.83613 (ms)Pass: MergeOrbitalRotations - 0.47660 (ms)Pass: UnitarySynthesis - 0.00596 (ms)Pass: HighLevelSynthesis - 2.15244 (ms)Pass: BasisTranslator - 0.09847 (ms)Pass: ElidePermutations - 0.00596 (ms)Pass: RemoveDiagonalGatesBeforeMeasure - 0.00691 (ms)Pass: RemoveIdentityEquivalent - 0.01311 (ms)Pass: InverseCancellation - 0.01502 (ms)Pass: ContractIdleWiresInControlFlow - 0.00215 (ms)Pass: CommutativeCancellation - 0.06628 (ms)Pass: ConsolidateBlocks - 0.33450 (ms)Pass: Split2QUnitaries - 0.00238 (ms)Pass: SetLayout - 0.01645 (ms)Pass: FullAncillaAllocation - 0.20909 (ms)Pass: EnlargeWithAncilla - 0.08869 (ms)Pass: ApplyLayout - 0.39935 (ms)Pass: CheckMap - 0.09441 (ms)Pass: BarrierBeforeFinalMeasurements - 2.13933 (ms)Pass: SabreSwap - 2.85649 (ms)Pass: FilterOpNodes - 0.39029 (ms)Pass: UnitarySynthesis - 0.01740 (ms)Pass: HighLevelSynthesis - 0.06032 (ms)Pass: BasisTranslator - 7.05075 (ms)Pass: Depth - 0.24176 (ms)Pass: Size - 0.00453 (ms)Pass: MinimumPoint - 0.01311 (ms)Pass: ConsolidateBlocks - 1.38307 (ms)Pass: UnitarySynthesis - 3.28827 (ms)Pass: RemoveIdentityEquivalent - 0.07010 (ms)Pass: Optimize1qGatesDecomposition - 0.46992 (ms)Pass: CommutativeCancellation - 0.52381 (ms)Pass: ContractIdleWiresInControlFlow - 0.00334 (ms)Pass: GatesInBasis - 0.13256 (ms)Pass: Depth - 0.12565 (ms)Pass: Size - 0.00358 (ms)Pass: MinimumPoint - 0.12374 (ms)Pass: ConsolidateBlocks - 0.97775 (ms)Pass: UnitarySynthesis - 0.90599 (ms)Pass: RemoveIdentityEquivalent - 0.05054 (ms)Pass: Optimize1qGatesDecomposition - 0.38958 (ms)Pass: CommutativeCancellation - 0.42534 (ms)Pass: ContractIdleWiresInControlFlow - 0.00215 (ms)Pass: GatesInBasis - 0.09036 (ms)Pass: Depth - 0.08821 (ms)Pass: Size - 0.00238 (ms)Pass: MinimumPoint - 0.00405 (ms)Pass: ConsolidateBlocks - 0.61655 (ms)Pass: UnitarySynthesis - 0.55766 (ms)Pass: RemoveIdentityEquivalent - 0.03672 (ms)Pass: Optimize1qGatesDecomposition - 0.24915 (ms)Pass: CommutativeCancellation - 0.29755 (ms)Pass: ContractIdleWiresInControlFlow - 0.00238 (ms)Pass: GatesInBasis - 0.08273 (ms)Pass: Depth - 0.07796 (ms)Pass: Size - 0.00238 (ms)Pass: MinimumPoint - 0.00405 (ms)Pass: ConsolidateBlocks - 0.56767 (ms)Pass: UnitarySynthesis - 0.61035 (ms)Pass: RemoveIdentityEquivalent - 0.03695 (ms)Pass: Optimize1qGatesDecomposition - 0.25320 (ms)Pass: CommutativeCancellation - 0.29516 (ms)Pass: ContractIdleWiresInControlFlow - 0.00262 (ms)Pass: GatesInBasis - 0.08297 (ms)Pass: Depth - 0.07796 (ms)Pass: Size - 0.00238 (ms)Pass: MinimumPoint - 0.00405 (ms)Pass: ConsolidateBlocks - 0.56744 (ms)Pass: UnitarySynthesis - 0.48494 (ms)Pass: RemoveIdentityEquivalent - 0.03505 (ms)Pass: Optimize1qGatesDecomposition - 0.24986 (ms)Pass: CommutativeCancellation - 0.29302 (ms)Pass: ContractIdleWiresInControlFlow - 0.00215 (ms)Pass: GatesInBasis - 0.08178 (ms)Pass: Depth - 0.07701 (ms)Pass: Size - 0.00238 (ms)Pass: MinimumPoint - 0.00453 (ms)Pass: ContainsInstruction - 0.00715 (ms)Pass: InstructionDurationCheck - 0.00310 (ms)

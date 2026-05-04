@@ -1,0 +1,17 @@
+{
+    "ch3_ch3_1.40": {
+        "energy": -78.8784743238192,
+        "mu": -0.003517372181469768,
+        "xyz_file": "relaxed_geoms/ch3_ch3/3-21g/sqd/11_opt_geometries/relaxed_geom_1.40_A.xyz"
+    },
+    "ch3_ch3_1.50": {
+        "energy": -78.89248794404085,
+        "mu": -0.0028524291425236713,
+        "xyz_file": "relaxed_geoms/ch3_ch3/3-21g/sqd/11_opt_geometries/relaxed_geom_1.50_A.xyz"
+    },
+    "ch3_ch3_1.30": {
+        "energy": -78.58340843788659,
+        "mu": -0.05156176181943889,
+        "xyz_file": "relaxed_geoms/ch3_ch3/3-21g/sqd/11_opt_geometries/relaxed_geom_1.30_A.xyz"
+    }
+}

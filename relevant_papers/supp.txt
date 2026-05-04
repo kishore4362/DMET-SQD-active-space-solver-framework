@@ -1,0 +1,460 @@
+Supplementary Information: Accurate quantum-centric
+simulations of intermolecular interactions
+Danil Kaliakin1 , Akhil Shajan1,2 , Fangchun Liang1 , Javier Robledo Moreno3 ,
+Zhen Li1 , Abhishek Mitra1 , Mario Motta3 , Caleb Johnson3 ,
+Abdullah Ash Saki3 , Susanta Das1 , Iskandar Sitdikov3 , Antonio Mezzacapo3 ,
+Kenneth M. Merz Jr.1,2*
+1
+
+Center for Computational Life Sciences, Lerner Research Institute, The Cleveland
+Clinic, Cleveland, Ohio, United States.
+2
+Department of Chemistry, Michigan State University, East Lansing, Michigan,
+United States.
+3
+IBM Quantum, IBM T.J. Watson Research Center, Yorktown Heights, New York,
+United States.
+
+*Corresponding author(s). E-mail(s): kmerz1@gmail.com;
+
+Supplementary Note 1: Geometries of potential energy surfaces
+The PES for the water dimer is calculated for distances between oxygen atom of the first water
+molecule and the hydrogen atom facing this oxygen atom from the second water molecule. In our
+calculations the corresponding distance ranges between 1.400 and 3.500 Å. We distribute the points
+for water dimer PES as 1.400, 1.500, 1.600, 1.700, 1.800, 1.900, 1.962, 2.000, 2.100, 2.200, 2.300,
+2.400, 2.500, 3.000, and 3.500 Å. All of water dimer simulations are done for all of these distances.
+The PES for the methane dimer is calculated for the distances between two carbon atoms ranging
+between 2.500 and 6.000 Å. We distribute the points for methane dimer PES as 2.500, 2.750, 3.000,
+3.167, 3.334, 3.500, 3.667, 3.834, 4.000, 4.250, 4.500, 4.750, 5.000, and 6.000 Å. To calculate the total
+energy of unbound dimer we utilize the distance of 48.000 Å for both water and methane dimers.
+All of CASCI (16e,16o), CCSD, CCSD(T), CCSD (16e,16o), and CCSD(T) (16e,16o) simulations of
+methane dimer as well as SQD (16e,16o) simulations with |χ̃b | = 20.0 · 103 are done for all of the
+distances described earlier. The methane dimer CASCI (16e,16o) simulations and SQD (16e,16o)
+simulations with |χ̃b | = 20.0 · 103 are also performed for an additional distance of 3.638 Å. The SQD
+(16e,16o) energy extrapolations using |χ̃b | of 9.0 · 103 , 11.0 · 103 , and 14.0 · 103 are done for 4.000,
+4.250, 4.500, 4.750, 5.000, 6.000, and 48.000 Å distances. In the case of HCI (16e,24o) simulations
+of the methane dimer, we use only distances of 3.638, 3.667, 3.750, 3.834, and 3.900 Å. In case of
+SQD (16e,24o) simulations we only use the distance of 3.638 Å. All calculations are done as singlepoint energy calculations with no geometry optimizations. To produce the geometries studies in this
+work, we start from the equilibrium geometries and change the distance between the centers of the
+monomers, with the geometries of the individual monomers fixed.
+
+Supplementary Note 2: Details of HCI calculations
+In HCI simulations instead of generating all of the single and double excitations one generates only
+those single and double excitations that correspond to Hamiltonian matrix elements exceeding a
+threshold ε. In HCI ε1 controls which determinants will be included in the variational wavefunction.
+In our HCI calculations, we use values of ε1 equal to 5 · 10−6 (during initial variational steps) and
+
+1
+
+1 · 10−6 (during later variational steps). We do not use the non-variational perturbative correction
+in our HCI calculations. Hence, our HCI calculations are fully variational, which allows for more
+appropriate comparison between the SQD and HCI results.
+
+Supplementary Note 3: Mapping of Electronic Configurations
+with Jordan-Wigner Transformation
+In this work the electronic configurations (Slater determinants) are mapped to qubit states through
+the Jordan-Wigner (JW) transformation as
+
+|x⟩ =
+
+Y
+
+(â†ρσ )xρσ |∅⟩,
+
+(S1)
+
+ρσ
+
+where |∅⟩ is the vacuum state corresponding to zero electrons, â†ρσ is the creation operator, and
+xρσ ∈ {0, 1} is the element of the computational basis, |x⟩, represented as,
+
+|x⟩ =
+
+O
+
+|xpσ ⟩.
+
+(S2)
+
+pσ
+
+Here each bitstring corresponds to the spin-up/down orbitals of the studied system as
+
+x = (xNMO −1↓ . . . x0↓ xNMO −1↑ . . . x0↑ )
+
+(S3)
+
+where the first half of the bitstring represents the spin-down orbitals, while the second half represents
+the spin-up orbitals as x↓ = (xNMO −1↓ . . . x0↓ ) and x↑ = (xNMO −1↑ . . . x0↑ ), respectively. Since the JW
+mapping operates in terms of spin orbitals, as oppose to molecular obitals (MOs), the JW mapping
+employs M = 2NM O qubits. Utilization of the spin orbitals
+P allows for the computation of the number
+of spin-σ electrons for P
+a given configuration x as Nxσ = p xpσ , while the total number of electrons
+is calculated as Nx = σ Nxσ . The Nx corresponds to the Hamming weight of x, where in the right
+particle sector the Nx = Nσ .
+
+2
+
+Supplementary Note 4: Effect of number of samples on total
+energy in SQD(16e,16o)
+a
+
+b
+SQD (16e,16o)
+SQD (16e,16o)
+
+CCSD (16e,16o)
+CCSD(t) (16e,16o)
+
+CASCI (16e,16o)
+
+CASCI (16e,16o)
+
+Fig. S1 Total energy of methane dimer predicted with SQD (16e,16o) at 3.638 Å distance between the
+monomers as the function of d · 107 . (a) the entire range of d, and (b) a magnified region with largest values of d,
+highlighted in panel (a) as a black box. The secondary x-axis demonstrates the value of |e
+χb | · 103 producing the given
+value of d · 107 . Solid green line with triangular markers shows SQD (16e,16o) results. Horizontal magenta, blue, and
+dashed light brown lines indicate the total energies from CCSD (16e,16o), CCSD(T) (16e,16o), and CASCI (16e,16o)
+calculations.
+
+Figure S1 demonstrates that for the methane dimer the SQD (16e,16o) calculations with 8 · 103
+samples per batch have a total energy below the CCSD (16e,16o) value while increasing the number
+of samples per batch to 10 · 103 leads to the recovery of the total energy of CCSD(t) (16e,16o).
+Increasing the number of samples per batch to 20 · 103 results in a SQD (16e,16o) total energy that
+is only 0.010 kcal/mol away from the total energy of CASCI (16e,16o).
+
+3
+
+Binding Energy (kcal/mol)
+
+Supplementary Note 5: PES of methane dimer including the
+repulsive region
+
+25.0
+
+CCSD(T) (16e,16o)
+SQD (16e,16o)
+CASCI (16e,16o)
+
+20.0
+
+CCSD(T)
+CCSD
+
+15.0
+10.0
+5.0
+0.0
+2.5 3.0 3.5 4.0 4.5 5.0 5.5 6.0
+Distance (Angstrom)
+
+Fig. S2 Binding energies of the methane dimer along its PES, where the distances between the centers
+of methane molecules range between 2.500 and 6.000 Å. Active space simulations are performed with (16e,16o).
+Light brown, orange, and blue dashed lines with circle markers depict PES calculated with CASCI, CCSD, and
+CCSD(T) methods, respectively. Solid yellow line with triangular markers depicts the PES calculated with the SQD
+method. Solid blue line represents CCSD(T) calculations using an active space. Black horizontal dashed line indicates
+the zero value of the binding energy.
+
+Supplementary Note 6: Effect of the improved LUCJ
+parametrization
+While SQD with LUCJ parameterized using t2 amplitudes from CCSD has shown promising results,
+significant efforts have also been devoted to improving the distribution obtained from quantum
+simulations using LUCJ circuits[1, 2]. A key approach involves optimizing the parameters through
+fitting based on the two-body operators to enhance energy estimation. As discussed earlier in Methods
+section LUCJ employs a local approximation, and its two-body operator differs substantially from
+that in the original unitary coupled cluster theory:
+†
+
+T̂2 − Tˆ2 =
+
+X
+
+Tabcd â†a â†c âd âb
+
+(S4)
+
+abcd
+
+Such difference can be reduced by minimizing the following functional:
+
+χ2 (J, K ) =
+
+X
+
+|Sabcd − Tabcd |2 ,
+
+(S5)
+
+abcd
+
+where
+
+Sabcd =
+
+XX
+
+µ
+
+µ
+
+µ
+
+µ
+
+µ
+[eK ]pa [e−K ]rb [eK ]qc [e−K ]sd δpr δqs Jpq
+.
+
+(S6)
+
+µ prqs
+
+This minimization was performed using scipy.optimize with the Powell method. The target functional
+as indicated in Eq. (S5) was reduced from 0.376 to 0.271. Figure S3 below presents the LUCJ
+
+4
+
+energy, representing the SCI calculation based solely on determinants with the correct number of
+particles before any configuration recovery. The figure presents the LUCJ energy of a methane dimer
+calculated with an active space of (16e, 16o) at an intermolecular distance of 3.638Å, plotted as a
+function of |e
+χb | · 103 . The solid green line with triangular markers represents LUCJ (16e, 16o) results
+obtained using t2 amplitudes from coupled-cluster singles and doubles (CCSD) on the ibm cleveland
+quantum device. In contrast, the solid yellow line with triangular markers corresponds to LUCJ
+(16e, 16o) energies obtained by parameter fitting, which effectively lowers the energy compared
+to using t2 amplitudes alone. Furthermore, the solid brown line with circular markers represents
+LUCJ (16e, 16o) results from parameter fitting in noiseless simulations (using the ffsim library [3]),
+demonstrating the potential of this approach in a low-noise quantum environment. The results suggest
+that parameter fitting improves energy estimates on current quantum hardware, and the noiseless
+simulation highlights the promise of this technique for future quantum devices with reduced noise. We
+are actively exploring this direction to enhance quantum sampling and improve energy calculations
+on next-generation quantum processors.
+
+5.0 6.0
+-80.4300
+
+8.0
+
+| ~b| · 103
+
+10.0
+
+20.0
+
+t2: IBM_Cleveland
+
+Parameter Fitting: IBM_Cleveland
+Parameter fitting: Simulator
+CASCI
+HF
+
+-80.4580
+LUCJ Energy (Hartree)
+
+15.0
+
+-80.4860
+-80.5140
+-80.5420
+-80.5700
+
+Fig. S3 LUCJ energy of a methane dimer calculated with active space (16e, 16o) at a distance of
+3.638Å, plotted as a function of |e
+χb | · 103 . The solid green line with triangular markers represent LUCJ (16e, 16o)
+results using t2 amplitudes from CCSD, while the solid yellow line with triangular markers corresponds to LUCJ (16e,
+16o) results obtained through parameter fitting. The solid brown line with circles represent LUCJ (16e, 16o) energies
+with parameter fitting from noiseless simulations. The dashed red and light brown denote LUCJ energies from HF and
+CASCI (16e, 16o) calculations, respectively.
+
+Supplementary Note 7: DMET SQD methodology and
+scalability analysis
+Density Matrix Embedding Theory (DMET) [4–8] is a wavefunction-based quantum embedding
+approach that enables the application of high-level electronic structure methods to selected subsystems while treating the rest of the system at a mean-field level. This method effectively reduces the
+computational cost of beyond mean-field calculations while maintaining accuracy.
+5
+
+DMET partitions the D-dimensional Hilbert space of a quantum system into a fragment subspace
+of dimension dF (where dF ≪ D) and an environment subspace of dimension DE = D − dF . The
+exact ground-state wavefunction of the system Hamiltonian, Ĥ , can be expressed using a Schmidt
+decomposition:
+dF
+X
+|Ψ⟩ =
+λµ |uµ ⟩ ⊗ |bµ ⟩,
+(S7)
+µ=1
+P
+where the bath states are given by |bµ ⟩ = e Vµe |e⟩. These bath states span a space of dimension
+dF , significantly reducing the complexity of the environment. The ground-state solution of Ĥ can be
+obtained from the embedding Hamiltonian:
+
+Ĥemb = P̂ Ĥ P̂ ,
+
+(S8)
+
+P
+where the projector P̂ = µν |uµ ⟩⟨uµ | ⊗ |bν ⟩⟨bν | defines a lower-dimensional subspace. Although this
+formulation is theoretically exact, it requires prior knowledge of the system’s ground state, making
+direct implementation impractical.
+To make DMET computationally feasible, a mean-field approximation is employed [6]. For a
+closed-shell system with Nelec electrons in Norb spatial orbitals, the mean-field wavefunction is given
+by a Slater determinant:
+Y
+|Φ⟩ =
+â†ci σ |∅⟩,
+(S9)
+iσ
+P
+where |∅⟩ represents the vacuum state and orbitals |ci ⟩ = p Cpi |p⟩ are expressed in a localized
+basis. The orbitals are categorized into fragment (p ∈ F ) and environment (e ∈
+/ F ) groups.
+To define the bath orbitals, the environment block of the one-particle reduced density matrix is
+diagonalized:
+ρee′ = ⟨Φ|Êee′ |Φ⟩.
+(S10)
+The eigenvalues δα classify the orbitals into (i) virtual environment orbitals (δα = 0), (ii) bath orbitals
+(0 < δα < 2), and (iii) occupied environment orbitals (δα = 2). This transformation effectively maps
+the problem onto an active space representation [5, 6].
+The full-system electronic Hamiltonian:
+Ĥ =
+
+X
+
+tpr Êrp +
+
+pr
+
+X (pr|qs)
+pq
+,
+Êrs
+2
+prqs
+
+(S11)
+
+is mapped to an effective subsystem Hamiltonian:
+
+X (tu|vw)
+tv
+Êuw
+,
+2
+tu
+tuvw
+i
+Xh
+= ttu +
+(tu|ee′ ) − (te′ |eu) ρ̃ee′ ,
+
+Ĥemb =
+t̃tu
+
+X
+
+t̃tu Êut +
+
+(S12)
+
+ee′
+
+where t, u refer to fragment andPbath orbitals, and the effective density matrix of occupied environment orbitals is given by ρ̃ee′ = α : δα =2 Weα We∗′ α . High-accuracy methods such as full configuration
+interaction (FCI) [4, 5], density matrix renormalization group (DMRG) [9], complete active space
+self-consistent field (CASSCF) [8, 10], and coupled cluster singles and doubles (CCSD) [11] can be
+applied to solve for the subsystem ground state.
+When using multiple overlapping fragments in DMET, variations in electron number and energy
+accuracy may arise [5, 6]. To address this, we employ a “one-shot” approach [6], where the embedding
+Hamiltonian is modified by introducing a global chemical potential:
+
+Ĥemb → Ĥemb − µglob
+
+X
+
+â†f âf .
+
+(S13)
+
+f ∈F
+
+The parameter µglob is iteratively optimized to ensure that the electron number predicted by DMET
+matches the exact system electron number, thus improving accuracy and consistency.
+Figure S4 illustrates the application of DMET-SQD in scaling the SQD approach to efficiently
+treat the (36e, 36o) active space of cyclohexane in its chair conformation. Here cyclohexane simulations are done for sto-3g basis set thus (36e,36o) corresponds to FCI case. Due to the computational
+6
+
+6.0
+
+| b| 103
+
+7.0
+
+8.0 9.0
+
+6.9
+
+8.0 8.3
+
+| E| (kcal/mol)
+
+3.0
+2.0
+1.0
+0.0
+5.0
+
+d
+
+105
+
+Fig. S4 Absolute energy differences (|∆E|) in kcal/mol for the chair conformer between DMET-SQD
+and DMET-FCI as a function of d · 105 . Dark brown triangular markers depict the computed deviations at each
+sampling point. The secondary x-axis demonstrates the value of |e
+χb | · 103 producing the given value of d · 105 .
+
+challenges associated with solving the full (36e, 36o) active space, the system is fragmented into
+smaller subsystems, each with an active space of (14e, 14o), making the calculations significantly
+more tractable while retaining accuracy. The geometry of cyclohexane in its chair conformation is
+computed with MP2/aug-cc-pVDZ level of theory with ORCA 5.0.4 software package. [12]
+The plot presents the absolute energy deviations (|∆E|) between DMET-SQD and the DMETFCI reference, revealing a systematic reduction in energy difference as the value of |e
+χb | · 103 increases.
+The deviations range from approximately 3.10 kcal/mol for the sparsest sampling down to just 0.015
+kcal/mol at the highest sample density. These results highlight the importance of increasing the
+number of samples to improve accuracy, as finer sampling enables better interpolation between data
+points and minimizes errors.
+
+7
+
+Supplementary References
+[1] Motta, M., Sung, K. J., Whaley, K. B., Head-Gordon, M. & Shee, J. Bridging physical intuition
+and hardware efficiency for correlated electronic states: the local unitary cluster jastrow ansatz
+for electronic structure. Chemical Science 14, 11213–11227 (2023).
+[2] Robledo-Moreno, J. et al. Chemistry beyond the scale of exact diagonalization on a quantumcentric supercomputer. Science Advances 11, eadu9991 (2025).
+[3] ffsims developers. ffsim: Faster simulations of fermionic quantum circuits (2024). Accessed:
+2024-09-01.
+[4] Knizia, G. & Chan, G. K.-L. Density matrix embedding: A simple alternative to dynamical
+mean-field theory. Phys. Rev. Lett. 109, 186404 (2012).
+[5] Knizia, G. & Chan, G. K.-L. Density matrix embedding: A strong-coupling quantum embedding
+theory. J. Chem. Theory Comput 9, 1428–1432 (2013).
+[6] Wouters, S., Jiménez-Hoyos, C. A., Sun, Q. & Chan, G. K.-L. A practical guide to density
+matrix embedding theory in quantum chemistry. Journal of chemical theory and computation
+12, 2706–2719 (2016).
+[7] Wouters, S., A. Jiménez-Hoyos, C. & KL Chan, G. Five years of density matrix embedding
+theory. Fragmentation: toward accurate calculations on complex molecular systems 227–243
+(2017).
+[8] Pham, H. Q., Bernales, V. & Gagliardi, L. Can density matrix embedding theory with the
+complete activate space self-consistent field solver describe single and double bond breaking in
+molecular systems? J. Chem. Theory Comput 14, 1960–1968 (2018).
+[9] Zheng, B.-X. & Chan, G. K.-L. Ground-state phase diagram of the square lattice hubbard model
+from density matrix embedding theory. Phys. Rev. B 93, 035126 (2016).
+[10] Chen, Q., Booth, G. H., Sharma, S., Knizia, G. & Chan, G. K.-L. Intermediate and spin-liquid
+phase of the half-filled honeycomb hubbard model. Phys. Rev. B 89, 165134 (2014).
+[11] Bulik, I. W., Chen, W. & Scuseria, G. E. Electron correlation in solids via density embedding
+theory. J. Chem. Phys 141 (2014).
+[12] Neese, F. Software update: The orca program system - version 5.0. Wiley Interdisciplinary
+Reviews: Computational Molecular Science 12, e1606 (2022).
+
+8
+
+

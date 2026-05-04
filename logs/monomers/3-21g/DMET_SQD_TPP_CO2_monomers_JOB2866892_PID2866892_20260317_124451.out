@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/bhabani/Kishore/Tangelo_2.0/run_dmet_sqd_relaxed_monomers.py", line 117, in <module>
+    vqe_options = {"qubit_mapping": "jw", "ansatz": Ansatze.UCCSD}
+                                                    ^^^^^^^
+NameError: name 'Ansatze' is not defined
