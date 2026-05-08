@@ -226,7 +226,7 @@ sqd_options = {
 
 | Parameter | Value |
 |---|---|
-| System | Fe-TPP · CO₂, charge = −1, singlet |
+| System | TPP-CO₂, charge = −1, singlet |
 | Total electrons | 142 |
 | Basis set | 3-21G |
 | Scan range | 1.3 – 1.7 Å (5 points) |
@@ -263,50 +263,7 @@ sqd_options = {
 
 ---
 
-## The DMET–SQD Active-Space Interface (Key Contribution)
 
-The central technical contribution is the correct construction of the active-space
-Hamiltonian passed to SQD. The frozen-core Coulomb–exchange correction:
-
-```
-h_pq^AS = h̃_pq^I + Σ_{i ∈ frozen_occ} [2·g_pqii^I − g_piiq^I]
-```
-
-is implemented in `tangelo/algorithms/sqd_solver.py` using:
-
-```python
-from pyscf import ao2mo
-from openfermion.ops.representations import get_active_space_integrals
-
-h1 = mo_coeff.T @ mol.mean_field.get_hcore() @ mo_coeff
-h2 = ao2mo.kernel(mol.mean_field._eri, mo_coeff)
-h2 = ao2mo.restore(1, h2, n_mos)
-h2 = h2.transpose(0, 2, 3, 1)   # PySCF → OpenFermion PQRS convention
-
-frozen_occ  = getattr(mol, "frozen_occupied", None) or []
-active_mos  = getattr(mol, "active_mos", list(range(n_mos)))
-_, hcore, eri = get_active_space_integrals(h1, h2, frozen_occ, active_mos)
-eri = eri.transpose(0, 3, 1, 2)  # back to chemist (ij|kl) for solve_fermion
-```
-
-Without this correction, the DMET self-consistency loop diverges on hardware.
-See Section II of the paper for the full mathematical derivation.
-
----
-
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@article{dmet_sqd_2025,
-  title   = {Beyond the Fragment Solver Bottleneck: DMET-Driven Quantum
-             Diagonalization on a Superconducting Quantum Processor},
-  journal = {PRX Quantum},
-  year    = {2025},
-  note    = {submitted}
-}
-```
 
 Also cite the core packages this work builds on:
 
@@ -326,10 +283,6 @@ access to the Kingston superconducting quantum processor.
 
 ---
 
-## License
-
-This project is licensed under the **Apache License 2.0** —
-see the [LICENSE](LICENSE) file for details.
 
 ---
 
