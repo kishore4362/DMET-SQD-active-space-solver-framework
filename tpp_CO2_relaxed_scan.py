@@ -330,6 +330,22 @@ class IBMAccountManager:
 # Define your IBM Quantum accounts here.
 ibm_accounts = [
     {
+        "token": "pvMLYVXcwUF4WWnZwtopLmFP_yPpmQwata63dmzinOW-",
+        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/0ad335e8eeb94c0f9e16f896f1613763:bc166bbb-efa7-4826-9576-0152a5e3bf5e::",
+    },
+    {
+        "token": "BbQOHAZCWuDgVVbqxhMWhJJCRenZJZs3GeC-dasWSVqx",
+        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/1f3400031e9644918728fca1cd67ad26:a60fff20-afd9-40cf-9128-9194cfe59d6a::",
+    },
+    {
+        "token": "rbGyRKObakMFhGfY778gHAb7NfdpE78l9WYoEA8y1_zv",
+        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/ccd2a1d13f904154a274171c9d5031fe:dae8523b-38d4-41bd-b0e1-a0fd4a9e58af::",
+    },
+    {
+        "token": "PnSsPRxI7zOeaLvqXm-UTV-pBmbzxNrYr-jnkvP1mdbS",
+        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/cea4d08bab75452a8424f00e1849a09e:29cbd2cb-6175-4422-bb5d-cd0aad1d27ad::",
+    },
+    {
         "token": "kWEZHN3iTHzoqRDqKk7oWyLe1WI1dpgPj9EBZxH_u_pZ",
         "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/457fbf8ffcdb4f8eaa005e51f1310c72:13af0048-a1ea-474a-b286-7b343383816e::",
     },
@@ -347,14 +363,6 @@ ibm_accounts = [
         "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/4fdc283da539404e97f2634a099643dd:e50a4a56-e9e3-4304-83ec-bb438721d71a::",
     },
     {
-        "token": "pvMLYVXcwUF4WWnZwtopLmFP_yPpmQwata63dmzinOW-",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/0ad335e8eeb94c0f9e16f896f1613763:bc166bbb-efa7-4826-9576-0152a5e3bf5e::",
-    },
-    {
-        "token": "BbQOHAZCWuDgVVbqxhMWhJJCRenZJZs3GeC-dasWSVqx",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/1f3400031e9644918728fca1cd67ad26:a60fff20-afd9-40cf-9128-9194cfe59d6a::",
-    },
-    {
         "token": "lCOlKoRXSOj7ZfT0Osk7ZoGS1hvL33rA36e7mM1xf3eH",
         "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/eb64916b69664a28b8a31f60c6df5fe3:52ac9b17-8f0d-4fa7-bb1c-e8b16b9f2dae::",
     },
@@ -370,40 +378,40 @@ ibm_accounts = [
 ]
 
 # Initialize the manager with 10 iterations per account limit for hardware runs.
-# service = IBMAccountManager(ibm_accounts, iterations_per_account=10)
-service = None
+service = IBMAccountManager(ibm_accounts, iterations_per_account=10)
+#service = None
 
 sqd_options = {
     # Hardware settings kept here for later restoration.
-    # "service": service,
-    # "backend": "ibm_kingston",
-    # "use_simulator": False,
-    "backend": "aer_simulator",
-    "use_simulator": True,
-    "sim_method": "matrix_product_state",
-    "sampling_ansatz": "hf",
+    "service": service,
+    "backend": "ibm_kingston",
+    "use_simulator": False,
+    #"backend": "aer_simulator",
+    #"use_simulator": True,
+    #"sim_method": "matrix_product_state",
+    #"sampling_ansatz": "hf",
     # LUCJ sampling settings kept here for later restoration after HF baseline checks.
-    # "sampling_ansatz": "lucj",
-    # "lucj_parameter_source": "ccsd",
-    # "lucj_optimize_t_amplitudes": False,
-    # "lucj_n_reps": 1,
-    # "lucj_seed": 123,
-    # "lucj_diag_coulomb_scale": 0.25,
-    # "lucj_interaction_pairs": "zigzag",
+    "sampling_ansatz": "lucj",
+    "lucj_parameter_source": "ccsd",
+    "lucj_optimize_t_amplitudes": True,
+    "lucj_n_reps": 1,
+    "lucj_seed": 123,
+    "lucj_diag_coulomb_scale": 0.25,
+    "lucj_interaction_pairs": "zigzag",
     # Hardware mitigation settings.
-    # "dynamical_decoupling": {
-    #     "enable": True,
-    #     "sequence_type": "XpXm",
-    #     "scheduling_method": "alap",
-    # },
-    # "gate_twirling": {
-    #     "enable_gates": True,
-    #     "num_randomizations": 8,
-    # },
-    # "measurement_twirling": {
-    #     "enable_measure": True,
-    #     "num_randomizations": 8,
-    # },
+    "dynamical_decoupling": {
+        "enable": True,
+        "sequence_type": "XpXm",
+        "scheduling_method": "alap",
+    },
+    "gate_twirling": {
+        "enable_gates": True,
+        "num_randomizations": 8,
+    },
+    "measurement_twirling": {
+        "enable_measure": True,
+        "num_randomizations": 8,
+    },
     "shots": 200000,
     "n_batches": 16,
     "samples_per_batch": 1000,
@@ -414,7 +422,7 @@ sqd_options = {
 
 noisy_optimizer_options = {
     "residual_evaluations": 1,
-    "residual_tol": 0.03,
+    "residual_tol": 0.003,
     "bracket_radius": 0.05,
     "bracket_growth": 1.5,
     "max_bracket_steps": 8,
@@ -430,8 +438,8 @@ ccsd_options = {}
 
 
 # ========== 5. Scan settings ==========
-#distances = [1.4]
-distances = np.linspace(1.3, 1.7, 5)
+distances = [1.2, 1.6, 1.7]
+#distances = np.linspace(1.3, 1.7, 5)
 basis_set = "3-21g"
 fragmentation_type = "type_C"
 sqd_homo_minus_m = 1

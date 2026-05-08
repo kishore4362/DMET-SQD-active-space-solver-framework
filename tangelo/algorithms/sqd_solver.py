@@ -1,6 +1,8 @@
 import numpy as np
 import ffsim
 import ffsim.random
+from pyscf import ao2mo
+from openfermion.ops.representations import get_active_space_integrals
 
 from qiskit import QuantumCircuit, QuantumRegister, transpile
 from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
@@ -317,14 +319,34 @@ class SQDSolver:
                 f"hamming_left={ham_left}, hamming_right={ham_right}"
             )
 
-        hcore = self.molecule.one_ele
-        eri = self.molecule.two_ele
-        # Ensure SQD operates on the active-space integrals aligned with the sampled bitstrings.
-        active = getattr(self.molecule, "active_mos", None)
-        if active is not None and hcore.shape[0] != len(active):
-            hcore = hcore[np.ix_(active, active)]
-            eri = eri[np.ix_(active, active, active, active)]
-        e_nuc =float(self.molecule.mean_field.mol.energy_nuc())
+        #hcore = self.molecule.one_ele
+        #eri = self.molecule.two_ele
+        ##Ensure SQD operates on the active-space integrals aligned with the sampled bitstrings.
+        #active = getattr(self.molecule, "active_mos", None)
+        #if active is not None and hcore.shape[0] != len(active):
+        #    hcore = hcore[np.ix_(active, active)]
+        #    eri = eri[np.ix_(active, active, active, active)]
+
+        ####---- New Active space----------###
+        mol = self.molecule
+        mo_coeff = mol.mean_field.mo_coeff
+        n_mos = mo_coeff.shape[1]
+        # One-electron part: use fock_frag_copy (includes DMET chemical potential)
+        h1 = mo_coeff.T @ mol.mean_field.get_hcore() @ mo_coeff
+        # Two-electron integrals in MO basis
+        h2 = ao2mo.kernel(mol.mean_field._eri, mo_coeff)
+        h2 = ao2mo.restore(1, h2, n_mos)
+        h2 = h2.transpose(0, 2, 3, 1)  # PySCF → OpenFermion PQRS convention  
+
+        frozen_occ = getattr(mol, "frozen_occupied", None) or []
+        active_mos = getattr(mol, "active_mos", list(range(n_mos)))
+
+        _, hcore, eri = get_active_space_integrals(h1, h2, frozen_occ, active_mos)
+        # solve_fermion expects chemist (ij|kl) convention
+        eri = eri.transpose(0, 3, 1, 2)
+        e_nuc = float(mol.mean_field.mol.energy_nuc())
+
+        #e_nuc =float(self.molecule.mean_field.mol.energy_nuc())
 
         avg_occ = None
         rng = np.random.default_rng(123)

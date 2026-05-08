@@ -1,6 +1,0 @@
-distance_angstrom,energy_hartree,xyz_file
-1.30000000,-917.4542306813,relaxed_geoms/type_C/3-21g/sqd/11_opt_geometries/relaxed_geom_1.30_A.xyz
-1.40000000,-916.6554796770,relaxed_geoms/type_C/3-21g/sqd/11_opt_geometries/relaxed_geom_1.40_A.xyz
-1.50000000,-915.9026215591,relaxed_geoms/type_C/3-21g/sqd/11_opt_geometries/relaxed_geom_1.50_A.xyz
-1.60000000,-915.3547375672,relaxed_geoms/type_C/3-21g/sqd/11_opt_geometries/relaxed_geom_1.60_A.xyz
-1.70000000,-914.7612758962,relaxed_geoms/type_C/3-21g/sqd/11_opt_geometries/relaxed_geom_1.70_A.xyz
