@@ -124,7 +124,7 @@ from **1.3 Å to 1.7 Å** in 5 steps (0.1 Å each), fully optimizing the geometr
 at each point with the N–C distance constrained.
 
 ```bash
-python tpp_CO2_relaxed_scan_1_.py
+python tpp_CO2_relaxed_scan.py
 ```
 
 **What it does:**
