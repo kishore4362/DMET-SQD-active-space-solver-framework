@@ -25,7 +25,7 @@ Full System (TPP-CO₂, 32 atoms, 142 electrons)
 ```
 DMET-SQD-active-space-solver-framework/
 │
-├── tpp_CO2_relaxed_scan_1_.py          # Main script: full TPP·CO₂ complex relaxed scan
+├── tpp_CO2_relaxed_scan.py          # Main script: full TPP·CO₂ complex relaxed scan
 ├── run_dmet_sqd_tpp_monomer.py         # TPP monomer reference calculation
 ├── run_dmet_sqd_co2_monomer.py         # CO₂ monomer reference calculation
 │
