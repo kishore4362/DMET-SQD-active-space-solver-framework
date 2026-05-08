@@ -3,10 +3,10 @@
 A hybrid quantum–classical framework that integrates **Density Matrix Embedding Theory (DMET)** with **Sample-based Quantum Diagonalization (SQD)** for correlated electronic structure calculations on near-term quantum hardware.
 ## Overview
 
-The framework decomposes a large molecular system (iron-tetraphenylporphyrin + CO₂) into chemically meaningful fragments using DMET. The chemically active N–CO₂ binding fragment is solved using SQD on IBM quantum hardware, while all remaining fragments are solved classically with CCSD. A noise-aware chemical potential optimizer enforces self-consistency across fragments.
+The framework decomposes a large molecular system (anionic-tetraphenylporphyrin + CO₂) into chemically meaningful fragments using DMET. The chemically active N–CO₂ binding fragment is solved using SQD on IBM quantum hardware, while all remaining fragments are solved classically with CCSD. A noise-aware chemical potential optimizer enforces self-consistency across fragments.
 
 ```
-Full System (Fe-TPP·CO₂, 32 atoms, 142 electrons)
+Full System (TPP-CO₂, 32 atoms, 142 electrons)
         │
         ▼  DMET fragmentation (type-C, 6 fragments)
 ┌───────────────────────────────────┐
