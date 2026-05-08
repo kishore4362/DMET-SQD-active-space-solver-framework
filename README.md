@@ -90,7 +90,10 @@ pip install -r requirements.txt
 
 To run on **real quantum hardware** (IBM Kingston), you need an IBM Quantum account and API token.
 
-**Never hardcode your token in the script.** Set it as an environment variable:
+**Space given for ibm token in the scripts .** Set it as an environment variable:
+ tpp_CO2_relaxed_scan.py          # Main script: full TPP·CO₂ complex relaxed scan
+run_dmet_sqd_tpp_monomer.py         # TPP monomer reference calculation
+run_dmet_sqd_co2_monomer.py 
 
 ```bash
 export IBM_QUANTUM_TOKEN="your_token_here"
