@@ -1,14 +1,6 @@
 # DMET–SQD Active-Space Solver Framework
 
 A hybrid quantum–classical framework that integrates **Density Matrix Embedding Theory (DMET)** with **Sample-based Quantum Diagonalization (SQD)** for correlated electronic structure calculations on near-term quantum hardware.
-
-This repository contains the code accompanying the paper:
-
-> **"Beyond the Fragment Solver Bottleneck: DMET-Driven Quantum Diagonalization on a Superconducting Quantum Processor"**
-> *(submitted to PRX Quantum)*
-
----
-
 ## Overview
 
 The framework decomposes a large molecular system (iron-tetraphenylporphyrin + CO₂) into chemically meaningful fragments using DMET. The chemically active N–CO₂ binding fragment is solved using SQD on IBM quantum hardware, while all remaining fragments are solved classically with CCSD. A noise-aware chemical potential optimizer enforces self-consistency across fragments.
