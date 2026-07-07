@@ -1,3 +1,19 @@
+This repository is derived from the Tangelo quantum chemistry framework
+(https://github.com/sandbox-quantum/Tangelo), which is distributed under
+the Apache License 2.0.
+
+The framework has been extended for this work by implementing:
+• SQD solver
+• IBM Quantum Runtime integration
+
+The modifications were developed as part of the research presented in
+
+"Active-Space Quantum Diagonalisation in a DMET Embedding: On a Quantum Hardware for CO₂ Capture Chemistry
+"
+
+
+
+
 # DMET–SQD Active-Space Solver Framework
 
 A hybrid quantum–classical framework that integrates **Density Matrix Embedding Theory (DMET)** with **Sample-based Quantum Diagonalization (SQD)** for correlated electronic structure calculations on near-term quantum hardware.
