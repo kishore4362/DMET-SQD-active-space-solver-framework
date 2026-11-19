@@ -330,51 +330,14 @@ class IBMAccountManager:
 # Define your IBM Quantum accounts here.
 ibm_accounts = [
     {
-        "token": "pvMLYVXcwUF4WWnZwtopLmFP_yPpmQwata63dmzinOW-",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/0ad335e8eeb94c0f9e16f896f1613763:bc166bbb-efa7-4826-9576-0152a5e3bf5e::",
+        "token": "ibm quantum api token",
+        "instance": "ibm instance",
     },
     {
-        "token": "BbQOHAZCWuDgVVbqxhMWhJJCRenZJZs3GeC-dasWSVqx",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/1f3400031e9644918728fca1cd67ad26:a60fff20-afd9-40cf-9128-9194cfe59d6a::",
+        "token": "ibm quantum api token",
+        "instance": "ibm instance",
     },
-    {
-        "token": "rbGyRKObakMFhGfY778gHAb7NfdpE78l9WYoEA8y1_zv",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/ccd2a1d13f904154a274171c9d5031fe:dae8523b-38d4-41bd-b0e1-a0fd4a9e58af::",
-    },
-    {
-        "token": "PnSsPRxI7zOeaLvqXm-UTV-pBmbzxNrYr-jnkvP1mdbS",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/cea4d08bab75452a8424f00e1849a09e:29cbd2cb-6175-4422-bb5d-cd0aad1d27ad::",
-    },
-    {
-        "token": "kWEZHN3iTHzoqRDqKk7oWyLe1WI1dpgPj9EBZxH_u_pZ",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/457fbf8ffcdb4f8eaa005e51f1310c72:13af0048-a1ea-474a-b286-7b343383816e::",
-    },
-
-   {
-        "token": "QpukZw3Tr7FJQil6ZnJw2PamzS0Old33BP83n_JDkB75",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/0726ecf18f7f49f5b9ddb084a08a6b02:cb535801-7d53-4ce4-8bfa-33e2f0c50e6e::",
-    },
-    {
-        "token": "YcWSqUmKsaAT_Ig5LQJ3N40PaG492mj27Do1YmyxV9yY",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/46541683cbe04712ba1286872f0c74e9:fd0ca640-5da0-4cec-b94d-bf5e37ec8d7b::",
-    },
-    {
-        "token": "_mpUflwlvZJPe6GCdHt_WUjhAZ9yKhdDSCzR6hBryYss",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/4fdc283da539404e97f2634a099643dd:e50a4a56-e9e3-4304-83ec-bb438721d71a::",
-    },
-    {
-        "token": "lCOlKoRXSOj7ZfT0Osk7ZoGS1hvL33rA36e7mM1xf3eH",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/eb64916b69664a28b8a31f60c6df5fe3:52ac9b17-8f0d-4fa7-bb1c-e8b16b9f2dae::",
-    },
-    {
-        "token": "MQhbO0nfvKL156EBFz5PIFibN_QXsGNfMr0mQcvHHN6T",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/7e6d614bc92045cf849801695aa631d4:7b0f013c-1263-4f3b-9834-7a7fd952960a::",
-    },
-    {
-        "token": "QRBK-w8D5--0sXFvRFMokmRcE7EBdtiWwG__yJsCWpxm",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/d01b336c5d3c4707b9e6dac2718e47cf:54e8be8a-ba5a-4fc0-bda2-6173688cb80f::",
-    },
-
+    
 ]
 
 # Initialize the manager with 10 iterations per account limit for hardware runs.
