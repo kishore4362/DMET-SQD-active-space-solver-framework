@@ -6,6 +6,8 @@ A hybrid quantum–classical framework that integrates **Density Matrix Embeddin
 The framework decomposes a large molecular system (anionic-tetraphenylporphyrin + CO₂) into chemically meaningful fragments using DMET. The chemically active N–CO₂ binding fragment is solved using SQD on IBM quantum hardware, while all remaining fragments are solved classically with CCSD. A noise-aware chemical potential optimizer enforces self-consistency across fragments.
 
 ```
+This repository is a modified copy of [Tangelo](https://github.com/goodchemistryco/Tangelo) (Apache License 2.0). See [CHANGES_FROM_UPSTREAM.md](CHANGES_FROM_UPSTREAM.md) for the files we added or modified.
+
 Full System (TPP-CO₂, 32 atoms, 142 electrons)
         │
         ▼  DMET fragmentation (type-C, 6 fragments)
