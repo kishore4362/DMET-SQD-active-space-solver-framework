@@ -190,7 +190,7 @@ scan point is:
 
 ## Switching Between Simulator and Hardware
 
-In `tpp_CO2_relaxed_scan_1_.py`, the `sqd_options` dictionary controls the backend.
+In `tpp_CO2_relaxed_scan.py`, the `sqd_options` dictionary controls the backend.
 
 **Simulator (default, no IBM account needed):**
 ```python
