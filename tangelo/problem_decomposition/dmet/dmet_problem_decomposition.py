@@ -1,3 +1,5 @@
+# Modified by Kishore Reddi, 2026: added SQD solver support (see CHANGES_FROM_UPSTREAM.md).
+
 # Copyright SandboxAQ 2021-2024.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
