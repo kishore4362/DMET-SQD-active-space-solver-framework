@@ -13,6 +13,7 @@ from tangelo import SecondQuantizedMolecule
 from tangelo.problem_decomposition import DMETProblemDecomposition
 
 enable_logging = True
+
 basis_set = "3-21g"
 sqd_homo_minus_m = 1
 sqd_lumo_plus_n = 1
@@ -81,17 +82,15 @@ class IBMAccountManager:
 
 ibm_accounts = [
     {
-        "token": "PnSsPRxI7zOeaLvqXm-UTV-pBmbzxNrYr-jnkvP1mdbS",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/cea4d08bab75452a8424f00e1849a09e:29cbd2cb-6175-4422-bb5d-cd0aad1d27ad::",
+        "token": "insert your IBM API token for hardware runs",
+        "instance": "Insert your IBM account instance",
     },
     {
-        "token": "rbGyRKObakMFhGfY778gHAb7NfdpE78l9WYoEA8y1_zv",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/ccd2a1d13f904154a274171c9d5031fe:dae8523b-38d4-41bd-b0e1-a0fd4a9e58af::",
+        "token": "insert your IBM API token for hardware runs",
+        "instance": "Insert your IBM account instance",
     },
 
 ]
-
-service = IBMAccountManager(ibm_accounts, iterations_per_account=10)
 
 # Geometry from only_tpp_opt_DFT_B3LYP_321g.gjf (charge=-1, spin=0)
 base_geom = np.array([
@@ -306,11 +305,17 @@ def noisy_optimizer(dmet_instance, mu0, options, verbose=True):
     return accept_converged_mu(best_mu, best_res)
 
 
+#service = IBMAccountManager(ibm_accounts, iterations_per_account=10)   ## activate for Hardware runs
+service = None
+
 sqd_options = {
     # Match the SQD settings used by tpp_CO2_relaxed_scan.py.
     "service": service,
-    "backend": "ibm_kingston",
-    "use_simulator": False,
+    #"backend": "ibm_kingston",                                        ## Activate this for Hardware run
+    #"use_simulator": False,                                           ## Activate this for Hardware run
+    "backend": "aer_simulator",                                        
+    "use_simulator": True,
+    "sim_method": "matrix_product_state",
     "sampling_ansatz": "lucj",
     "lucj_parameter_source": "ccsd",
     "lucj_optimize_t_amplitudes": True,
