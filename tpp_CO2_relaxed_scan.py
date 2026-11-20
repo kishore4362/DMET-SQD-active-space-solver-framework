@@ -341,17 +341,17 @@ ibm_accounts = [
 ]
 
 # Initialize the manager with 10 iterations per account limit for hardware runs.
-service = IBMAccountManager(ibm_accounts, iterations_per_account=10)
-#service = None
+#service = IBMAccountManager(ibm_accounts, iterations_per_account=10)
+service = None
 
 sqd_options = {
     # Hardware settings kept here for later restoration.
     "service": service,
-    "backend": "ibm_kingston",
-    "use_simulator": False,
-    #"backend": "aer_simulator",
-    #"use_simulator": True,
-    #"sim_method": "matrix_product_state",
+    #"backend": "ibm_kingston",
+    #"use_simulator": False,
+    "backend": "aer_simulator",
+    "use_simulator": True,
+    "sim_method": "matrix_product_state",
     #"sampling_ansatz": "hf",
     # LUCJ sampling settings kept here for later restoration after HF baseline checks.
     "sampling_ansatz": "lucj",
