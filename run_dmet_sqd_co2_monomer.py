@@ -81,12 +81,10 @@ class IBMAccountManager:
 
 ibm_accounts = [
     {
-        "token": "rbGyRKObakMFhGfY778gHAb7NfdpE78l9WYoEA8y1_zv",
-        "instance": "crn:v1:bluemix:public:quantum-computing:us-east:a/ccd2a1d13f904154a274171c9d5031fe:dae8523b-38d4-41bd-b0e1-a0fd4a9e58af::",
+        "token": "Insert your IBM account api token",
+        "instance": "Insert your IBM account instance",
     },
 ]
-
-service = IBMAccountManager(ibm_accounts, iterations_per_account=10)
 
 # Coordinates from only_CO2_opt_DFT_B3LYP_321g.gjf
 base_geom = np.array([
@@ -262,12 +260,17 @@ def noisy_optimizer(dmet_instance, mu0, options, verbose=True):
     print(f"[Optimizer] Returning best observed mu={best_mu:.6f}, residual={best_res:.6f}")
     return accept_converged_mu(best_mu, best_res)
 
+#service = IBMAccountManager(ibm_accounts, iterations_per_account=10)        ## activate this for Hardware run
+service = None 
 
 sqd_options = {
     # Match the SQD settings used by tpp_CO2_relaxed_scan.py.
     "service": service,
-    "backend": "ibm_kingston",
-    "use_simulator": False,
+    #"backend": "ibm_kingston",
+    #"use_simulator": False,
+    "backend": "aer_simulator",
+    "use_simulator": True,
+    "sim_method": "matrix_product_state",
     "sampling_ansatz": "lucj",
     "lucj_parameter_source": "ccsd",
     "lucj_optimize_t_amplitudes": True,
