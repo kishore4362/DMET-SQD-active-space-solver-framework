@@ -104,17 +104,6 @@ export IBM_QUANTUM_TOKEN="your_token_here"
 export IBM_QUANTUM_INSTANCE="crn:v1:bluemix:public:quantum-computing:..."
 ```
 
-Then in the script, replace the hardcoded token with:
-
-```python
-import os
-service = QiskitRuntimeService(
-    channel="ibm_quantum_platform",
-    token=os.environ["IBM_QUANTUM_TOKEN"],
-    instance=os.environ["IBM_QUANTUM_INSTANCE"],
-)
-```
-
 Get your token at: https://quantum.ibm.com/account
 
 ---
