@@ -107,14 +107,6 @@ def keep_all_orbitals(_info_fragment):
     return []
 
 
-def newton_optimizer(func, mu0):
-    """Force Tangelo's deterministic Newton optimizer even when an SQD fragment is present."""
-    import scipy.optimize
-
-    result = scipy.optimize.newton(func, mu0, tol=1e-4)
-    return result.real
-
-
 def noisy_optimizer(dmet_instance, mu0, options, verbose=True):
     """
     Root finder for noisy hardware residuals with in-memory caching.
